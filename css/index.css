@@ -1,0 +1,861 @@
+.topColor {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.topColor .topCenter {
+  width: 1200px;
+  height: 68px;
+  background-color: blue;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topColor .topCenter .topLogo img {
+  width: 135px;
+  height: 36px;
+}
+.topColor .topCenter .topSerach input {
+  width: 196px;
+  height: 38px;
+  border-radius: 20px 0px 0px 20px;
+}
+.topColor .topCenter .topSerach button {
+  width: 96px;
+  height: 40px;
+  background: #ff5c38;
+  border-radius: 0 20px 20px 0;
+}
+.topColor .topCenter .letfbin {
+  width: 96px;
+  height: 40px;
+}
+section .container {
+  position: relative;
+  width: 1519.2px;
+  height: 500px;
+  background-color: #ff5c38;
+  overflow: hidden;
+}
+section .containerRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 310px;
+  height: 432px;
+  background: rgba(15, 15, 30, 0.4);
+  z-index: 20;
+}
+section .containerRight .nav-barFirst li {
+  width: 275px;
+  height: 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 20px 0 0 35px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+section .containerRight .nav-barSecond li:nth-of-type(1) {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover ~ .img1 {
+  opacity: 0;
+}
+section .containerRight .nav-barSecond li:nth-of-type(3):hover {
+  font-size: 22px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .containerRight .nav-barSecond li:nth-of-type(3):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(3):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(4):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(4):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(4):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(5):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(5):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(5):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(6):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(6):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(6):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(2):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(7):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(7):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(7):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(8):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(8):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(8):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(9):hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+section .containerRight .nav-barSecond li:nth-of-type(9):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(9):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li:nth-of-type(10):hover {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 5px 0 0 35px;
+}
+section .containerRight .nav-barSecond li:nth-of-type(10):hover span {
+  color: #ff5c38;
+}
+section .containerRight .nav-barSecond li:nth-of-type(10):hover .title-1 {
+  font-size: 12px;
+  opacity: 1;
+}
+section .containerRight .nav-barSecond li {
+  width: 270px;
+  height: 35px;
+  padding: 8px 0 0 35px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: font-size 0.08s ease;
+}
+section .containerRight .nav-barSecond li span {
+  color: #fff;
+}
+section .containerRight .nav-barSecond li .title-1 {
+  font-size: 15px;
+  opacity: 0;
+}
+.s-second {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.s-second .main_nav-0 {
+  width: 258px;
+  height: 100px;
+  position: relative;
+}
+.s-second .main_nav-0 .main_nav-0-top {
+  width: 258px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  line-height: 42px;
+  font-size: 15px;
+  position: relative;
+}
+.s-second .main_nav-0 .main_nav-0-top .TV-play {
+  font-weight: 600;
+  color: #111;
+}
+.s-second .main_nav-0 .main_nav-0-top .TV-play:hover + .allTVDramas {
+  display: block;
+}
+.s-second .main_nav-0 .main_nav-0-top .allTVDramas {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -280px;
+  width: 360px;
+  padding: 13px 0 0px 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 28px 50px rgba(25 24 40/35%);
+  white-space: normal;
+  display: none;
+}
+.s-second .main_nav-0 .main_nav-0-top .allTVDramas p {
+  font-size: 15px;
+  color: #ff5c38;
+}
+.s-second .main_nav-0 .main_nav-0-top .allTVDramas a {
+  color: #111;
+  display: inline-block;
+  width: 100px;
+  margin: 0 18px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.s-second .main_nav-0 .main_nav-0-top .allTVDramas::after {
+  position: absolute;
+  top: auto;
+  bottom: -14px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  font-size: 0;
+  content: "";
+  pointer-events: none;
+}
+.s-second .main_nav-0 .nav-icon {
+  margin-left: 15px;
+  width: 18px;
+  height: 18px;
+}
+.s-second .main_nav-0 .Overseas-drama,
+.s-second .main_nav-0 .Online-drama {
+  margin-left: 20px;
+  color: #666;
+}
+.s-second .main_nav-0 .TV-play:hover {
+  color: #ff5c38;
+}
+.s-second .main_nav-0 .TV-play:hover:hover + .allTVDramas {
+  display: block;
+}
+.s-second .main_nav-0 .Overseas-drama:hover {
+  color: #ff5c38;
+}
+.s-second .main_nav-0 .Online-drama:hover {
+  color: #ff5c38;
+}
+.s-second .main_nav-0-bottom {
+  margin-top: 16px;
+  width: 258px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  line-height: 42px;
+  font-size: 15px;
+  position: absolute;
+}
+.s-second .main_nav-0-bottom .TV-play {
+  font-weight: 600;
+  color: #111;
+}
+.s-second .main_nav-0-bottom .allTVDramas {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -280px;
+  width: 360px;
+  padding: 13px 0 0px 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 28px 50px rgba(25 24 40/35%);
+  white-space: normal;
+  display: none;
+}
+.s-second .main_nav-0-bottom .allTVDramas p {
+  font-size: 15px;
+  color: #ff5c38;
+}
+.s-second .main_nav-0-bottom .allTVDramas a {
+  color: #111;
+  display: inline-block;
+  width: 100px;
+  margin: 0 18px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.s-second .main_nav-0-bottom .allTVDramas::after {
+  position: absolute;
+  top: auto;
+  bottom: -14px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  font-size: 0;
+  content: "";
+  pointer-events: none;
+}
+.s-second .main_nav-0-bottom .nav-icon {
+  margin-left: 15px;
+  width: 18px;
+  height: 18px;
+}
+.s-second .main_nav-0-bottom .large-Cinema-Area {
+  margin-left: 33px;
+  color: #666;
+}
+.s-second .main_nav-0-bottom .Online-drama {
+  margin-left: 8px;
+  color: #666;
+}
+.s-second .main_nav-0-bottom .TV-play:hover {
+  color: #ff5c38;
+}
+.s-second .main_nav-0-bottom .large-Cinema-Area:hover {
+  color: #ff5c38;
+}
+.s-second .main_nav-0-bottom .Online-drama:hover {
+  color: #ff5c38;
+}
+.main_nav-1 {
+  width: 213px;
+  height: 100px;
+}
+.main_nav-1 .main_nav-1-top {
+  width: 213px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  line-height: 42px;
+  font-size: 15px;
+  position: relative;
+}
+.main_nav-1 .main_nav-1-top .nav-icon {
+  margin-left: 15px;
+  width: 18px;
+  height: 18px;
+}
+.main_nav-1 .main_nav-1-top .TV-play {
+  font-weight: 600;
+  color: #111;
+}
+.main_nav-1 .main_nav-1-top .TV-play:hover + .allTVDramas {
+  display: block;
+}
+.main_nav-1 .main_nav-1-top .allTVDramas {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -280px;
+  width: 360px;
+  padding: 13px 0 0px 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 28px 50px rgba(25 24 40/35%);
+  white-space: normal;
+  display: none;
+}
+.main_nav-1 .main_nav-1-top .allTVDramas p {
+  font-size: 15px;
+  color: #ff5c38;
+}
+.main_nav-1 .main_nav-1-top .allTVDramas a {
+  color: #111;
+  display: inline-block;
+  width: 100px;
+  margin: 0 18px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.main_nav-1 .main_nav-1-top .allTVDramas::after {
+  position: absolute;
+  top: auto;
+  bottom: -14px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  font-size: 0;
+  content: "";
+  pointer-events: none;
+}
+.main_nav-1 .main_nav-1-top .madeByTencent {
+  margin-left: 20px;
+  color: #666;
+}
+.main_nav-1 .main_nav-1-top .madeByTencent:hover {
+  color: #ff5c38;
+}
+.main_nav-1 .main_nav-1-top .soloBroadcast {
+  margin-left: 10px;
+  color: #666;
+}
+.main_nav-1 .main_nav-1-top .soloBroadcast:hover {
+  color: #ff5c38;
+}
+.main_nav-1 .main_nav-1-bottom {
+  margin-top: 16px;
+  width: 213px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  line-height: 42px;
+  font-size: 15px;
+  position: relative;
+}
+.main_nav-1 .main_nav-1-bottom .nav-icon {
+  margin-left: 15px;
+  width: 18px;
+  height: 18px;
+}
+.main_nav-1 .main_nav-1-bottom .TV-play {
+  font-weight: 600;
+  margin-right: 20px;
+  color: #111;
+}
+.main_nav-1 .main_nav-1-bottom .TV-play:hover + .allTVDramas {
+  display: block;
+}
+.main_nav-1 .main_nav-1-bottom .allTVDramas {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -280px;
+  width: 360px;
+  padding: 13px 0 0px 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 28px 50px rgba(25 24 40/35%);
+  white-space: normal;
+  display: none;
+}
+.main_nav-1 .main_nav-1-bottom .allTVDramas p {
+  font-size: 15px;
+  color: #ff5c38;
+}
+.main_nav-1 .main_nav-1-bottom .allTVDramas a {
+  color: #111;
+  display: inline-block;
+  width: 100px;
+  margin: 0 18px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.main_nav-1 .main_nav-1-bottom .allTVDramas::after {
+  position: absolute;
+  top: auto;
+  bottom: -14px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  font-size: 0;
+  content: "";
+  pointer-events: none;
+}
+.main_nav-1 .main_nav-1-bottom .Guoman {
+  color: #666;
+}
+.main_nav-1 .main_nav-1-bottom .Guoman:hover {
+  color: #ff5c38;
+}
+.main_nav-1 .main_nav-1-bottom .Diffuse {
+  margin-left: 40px;
+  color: #666;
+}
+.main_nav-1 .main_nav-1-bottom .Diffuse:hover {
+  color: #ff5c38;
+}
+.main_nav-2 {
+  width: 198px;
+  height: 100px;
+}
+.main_nav-2 .main_nav-2-top {
+  width: 198px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  line-height: 42px;
+  font-size: 15px;
+  position: relative;
+}
+.main_nav-2 .main_nav-2-top .nav-icon {
+  margin-left: 15px;
+  width: 18px;
+  height: 18px;
+}
+.main_nav-2 .main_nav-2-top .TV-play {
+  font-weight: 600;
+  color: #111;
+}
+.main_nav-2 .main_nav-2-top .TV-play:hover + .allTVDramas {
+  display: block;
+}
+.main_nav-2 .main_nav-2-top .allTVDramas {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -280px;
+  width: 360px;
+  padding: 13px 0 0px 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 28px 50px rgba(25 24 40/35%);
+  white-space: normal;
+  display: none;
+}
+.main_nav-2 .main_nav-2-top .allTVDramas p {
+  font-size: 15px;
+  color: #ff5c38;
+}
+.main_nav-2 .main_nav-2-top .allTVDramas a {
+  color: #111;
+  display: inline-block;
+  width: 100px;
+  margin: 0 18px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.main_nav-2 .main_nav-2-top .allTVDramas::after {
+  position: absolute;
+  top: auto;
+  bottom: -14px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  font-size: 0;
+  content: "";
+  pointer-events: none;
+}
+.main_nav-2 .main_nav-2-top .Puzzle,
+.main_nav-2 .main_nav-2-top .nurseryRhyme {
+  margin-left: 20px;
+  color: #666;
+}
+.main_nav-2 .main_nav-2-top .Puzzle:hover {
+  color: #ff5c38;
+}
+.main_nav-2 .main_nav-2-top .nurseryRhyme:hover {
+  color: #ff5c38;
+}
+.main_nav-2 .main_nav-2-bottom {
+  margin-top: 16px;
+  width: 198px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  line-height: 42px;
+  font-size: 15px;
+  position: relative;
+}
+.main_nav-2 .main_nav-2-bottom .nav-icon {
+  margin-left: 15px;
+  width: 18px;
+  height: 18px;
+}
+.main_nav-2 .main_nav-2-bottom .TV-play {
+  font-weight: 600;
+  color: #111;
+}
+.main_nav-2 .main_nav-2-bottom .TV-play:hover + .allTVDramas {
+  display: block;
+}
+.main_nav-2 .main_nav-2-bottom .allTVDramas {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -280px;
+  width: 360px;
+  padding: 13px 0 0px 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 28px 50px rgba(25 24 40/35%);
+  white-space: normal;
+  display: none;
+}
+.main_nav-2 .main_nav-2-bottom .allTVDramas p {
+  font-size: 15px;
+  color: #ff5c38;
+}
+.main_nav-2 .main_nav-2-bottom .allTVDramas a {
+  color: #111;
+  display: inline-block;
+  width: 100px;
+  margin: 0 18px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.main_nav-2 .main_nav-2-bottom .allTVDramas::after {
+  position: absolute;
+  top: auto;
+  bottom: -14px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  font-size: 0;
+  content: "";
+  pointer-events: none;
+}
+.main_nav-2 .main_nav-2-bottom .deliciousFood {
+  margin-left: 6px;
+  color: #666;
+}
+.main_nav-2 .main_nav-2-bottom .natural {
+  margin-left: 18px;
+  color: #666;
+}
+.main_nav-2 .main_nav-2-bottom .deliciousFood:hover {
+  color: #ff5c38;
+}
+.main_nav-2 .main_nav-2-bottom .natural:hover {
+  color: #ff5c38;
+}
+.main_nav-3 {
+  width: 307.83px;
+  height: 100px;
+}
+.main_nav-3 .leftNavigation {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.main_nav-3 .leftNavigation li {
+  width: 52.83px;
+  height: 42px;
+}
+.main_nav-3 .leftNavigation li:first-of-type {
+  width: 60px;
+  height: 42px;
+}
+.main_nav-3 .leftNavigation li:first-of-type:hover {
+  color: #ff5c38;
+}
+.main_nav-3 .leftNavigation li:nth-of-type(2):hover {
+  color: #ff5c38;
+}
+.main_nav-3 .rightNavigation {
+  width: 307.83px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.main_nav-3 .rightNavigation li {
+  width: 52.83px;
+  height: 42px;
+}
+.main_nav-4 {
+  margin-right: 20px;
+  width: 200px;
+  height: 67px;
+}
+.main_nav-4 .client {
+  width: 84px;
+  height: 67px;
+}
+.main_nav-4 .cinema {
+  width: 84;
+  height: 67px;
+}
+.mod_hd {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+.mod_hd .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mod_hd .title h2 {
+  color: #111;
+  font-size: 30px;
+  font-weight: 400;
+}
+.mod_hd .title a {
+  margin: 20px 0 0 20px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+.mod_hd .Hotspot_switching {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.mod_hd .Hotspot_switching .icon-zuojiantou {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ccc;
+}
+.mod_hd .Hotspot_switching span {
+  width: 45px;
+  margin-left: 25px;
+  margin-right: 15px;
+  color: #666;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.mod_hd .Hotspot_switching .icon-youjiantou {
+  font-size: 10px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+/* 热点视频的操作 */
+.hotVideo {
+  width: 1200px;
+  height: 203px;
+  background-color: aqua;
+  margin: 0 auto;
+}
+.list_sum {
+  justify-content: flex-start;
+}
+.list_sum .list_num {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  height: 192px;
+  margin: 0 auto;
+}
+.list_sum .list_num .list_item {
+  position: relative;
+  width: 185px;
+  height: 152px;
+}
+.list_sum .list_num .list_item a {
+  /*  .play {
+            //svg图片我们要进行下载来
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 14px;
+            height: 18px;
+            background: url() 0 0 no-repeat;
+          } */
+}
+.list_sum .list_num .list_item a .firstImg {
+  width: 185px;
+  height: 105px;
+  border-radius: 4px;
+}
+.list_sum .list_num .list_item a .videoTime {
+  position: absolute;
+  left: 0;
+  bottom: 48px;
+  width: auto;
+  height: 20px;
+  padding: 10px 10px 4px;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) 25.5%, rgba(0, 0, 0, 0.08) 70%, rgba(0, 0, 0, 0));
+}
+.list_sum .list_num .list_item .title_text {
+  position: absolute;
+  bottom: -15px;
+  width: 185px;
+  height: 44px;
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  white-space: normal;
+  word-break: break-all;
+}
