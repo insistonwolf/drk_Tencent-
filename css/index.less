@@ -281,7 +281,7 @@
     height: 100px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -303,6 +303,16 @@
         position: relative;
 
         .TV-play {
+          &::after {
+            content: '';
+            position: absolute;
+            left: 95px;
+            top: 15px;
+            width: 1px;
+            height: 16px;
+            background-color: #ccc;
+            z-index: 23;
+          }
           font-weight: 600;
           color: #111;
 
@@ -363,9 +373,18 @@
       }
 
       .nav-icon {
+        display: inline-block;
+        // margin-top: 5px;
         margin-left: 15px;
-        width: 18px;
-        height: 18px;
+
+        img {
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+        }
+
+        // line-height: 20px;
+        // vertical-align: center;
       }
 
       .Overseas-drama,
@@ -404,6 +423,16 @@
       position: absolute;
 
       .TV-play {
+        &::after {
+          content: '';
+          position: absolute;
+          left: 95px;
+          top: 15px;
+          width: 1px;
+          height: 16px;
+          background-color: #ccc;
+          z-index: 23;
+        }
         font-weight: 600;
         color: #111;
       }
@@ -515,7 +544,17 @@
       .TV-play {
         font-weight: 600;
         color: #111;
-
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 42px;
+          bottom: -1px;
+          width: 1px;
+          height: 16px;
+          background-color: #ccc;
+          z-index: 23;
+        }
         &:hover+.allTVDramas {
           display: block;
         }
@@ -610,6 +649,16 @@
       }
 
       .TV-play {
+        &::after {
+          content: '';
+          position: absolute;
+          left: 80px;
+          top: 15px;
+          width: 1px;
+          height: 16px;
+          background-color: #ccc;
+          z-index: 23;
+        }
         font-weight: 600;
         // margin-left: 5px;
         margin-right: 20px;
@@ -715,6 +764,18 @@
       .TV-play {
         font-weight: 600;
         color: #111;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 52px;
+          bottom: -1px;
+          width: 1px;
+          height: 18px;
+          background-color: #ccc;
+          z-index: 23;
+        }
 
         &:hover+.allTVDramas {
           display: block;
@@ -771,8 +832,10 @@
         content: "";
         pointer-events: none;
       }
-
-      .Puzzle,
+      .Puzzle{
+        margin-left: 28px;
+        color: #666;
+      }
       .nurseryRhyme {
         margin-left: 20px;
         color: #666;
@@ -805,6 +868,16 @@
       }
 
       .TV-play {
+        &::after {
+          content: '';
+          position: absolute;
+          left: 90px;
+          top: 15px;
+          width: 1px;
+          height: 18px;
+          background-color: #ccc;
+          z-index: 23;
+        }
         font-weight: 600;
         color: #111;
 
@@ -865,7 +938,7 @@
       }
 
       .deliciousFood {
-        margin-left: 6px;
+        margin-left: 15px;
         color: #666;
       }
 
@@ -885,20 +958,34 @@
 
   }
 
-  //vip会员的书写
+  //vip会员 云游戏 导航栏
   .main_nav-3 {
-    // margin-left: 30px;
+    margin-left: 35px;
     width: 307.83px;
     height: 100px;
 
     // background-color: #ff5c38;
     .leftNavigation {
-      margin-top: 16px;
+      margin-top: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 15px;
       font-weight: 500;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        bottom: -23px;
+        width: 1px;
+        height: 48px;
+        background-color: #eee;
+        font-weight: 700;
+        box-shadow: #f8f8f8;
+        z-index: 23;
+      }
 
       li {
         width: 52.83px;
@@ -916,11 +1003,191 @@
         &:nth-of-type(2):hover {
           color: #ff5c38;
         }
+
+        &:nth-of-type(3):hover .allTVDramas {
+          display: block;
+        }
+
+        &:nth-of-type(3) {
+
+          //音乐导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -220px;
+            top: -280px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 335px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
+
+        &:nth-of-type(4):hover .allTVDramas {
+          display: block;
+        }
+
+        &:nth-of-type(4) {
+
+          //体育导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -130px;
+            top: -280px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 334px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
+
+        &:nth-of-type(5):hover .allTVDramas {
+          display: block;
+        }
+
+        &:nth-of-type(5) {
+
+          //体育导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -95px;
+            top: -195px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 354px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
       }
     }
 
     .rightNavigation {
-
+      margin-top: 13px;
       width: 307.83px;
       height: 42px;
       display: flex;
@@ -932,22 +1199,288 @@
       li {
         width: 52.83px;
         height: 42px;
+        position: relative;
+
+        &:first-of-type:hover .allTVDramas {
+          display: block;
+        }
+
+        &:first-of-type {
+
+          //音乐导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -320px;
+            top: -280px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 335px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
+
+        &:nth-of-type(2):hover .allTVDramas {
+          display: block;
+        }
+
+        &:nth-of-type(2) {
+
+          //音乐导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -315px;
+            top: -280px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 335px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
+
+        &:nth-of-type(4):hover .allTVDramas {
+          display: block;
+        }
+
+        &:nth-of-type(4) {
+
+          //音乐导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -309px;
+            top: -280px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 335px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
+
+        &:nth-of-type(5):hover .allTVDramas {
+          display: block;
+        }
+
+        &:nth-of-type(5) {
+         color: #ff5c38;
+          //音乐导航栏
+          .allTVDramas {
+            //底部的导航栏
+            z-index: 10;
+            position: absolute;
+            left: -329px;
+            top: -189px;
+            width: 360px;
+            // height: 200px;
+            padding: 13px 0 0px 30px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
+            white-space: normal;
+            display: none;
+
+            p {
+              font-size: 15px;
+              color: #ff5c38;
+            }
+
+            a {
+              color: #111;
+              font-size: 13px;
+              display: inline-block;
+              width: 100px;
+              margin: 0 18px 0 0;
+              overflow: hidden;
+              font-size: 13px;
+              letter-spacing: normal;
+              line-height: 45px;
+              text-overflow: ellipsis;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+          }
+
+          .allTVDramas::after {
+            position: absolute;
+            top: auto;
+            bottom: -14px;
+            left: 335px;
+            width: 0;
+            height: 0;
+            overflow: visible;
+            border: 7px solid transparent;
+            border-top-color: #fff;
+            font-size: 0;
+            content: "";
+            pointer-events: none;
+          }
+
+        }
       }
     }
   }
 
+  //客户端的下载
   .main_nav-4 {
-    margin-right: 20px;
-    width: 200px;
+    // margin-right: 20px;
+    width: 150px;
     height: 67px;
+    // background-color: aqua;
+    position: relative;
 
     // background-color: #ff5c38;
     .client {
+      position: absolute;
+      left: -30px;
+      top: 0;
+      width: 84px;
+      height: 67px;
+    }
+
+    .load {
+      position: absolute;
+      left: -23px;
+      top: 0;
       width: 84px;
       height: 67px;
     }
 
     .cinema {
+      position: absolute;
+      left: 55px;
+      top: 0;
+      width: 84;
+      height: 67px;
+    }
+
+    .vip {
+      position: absolute;
+      left: 55px;
+      top: 0;
       width: 84;
       height: 67px;
     }
@@ -988,6 +1521,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 30px;
+
       .icon-zuojiantou {
         // margin-right: 10px;
         font-size: 13px;
@@ -1021,32 +1555,34 @@
     margin: 0 auto;
   }
 
-          //视频的书写
+  //视频的书写
   .list_sum {
     // width: 7200px;
     // display: flex;
     justify-content: flex-start;
+
     .list_num {
       display: flex; //开启弹性盒子布局
       justify-content: space-around;
       width: 1200px;
       height: 192px;
       margin: 0 auto;
+
       // position: fixed;
       .list_item {
         position: relative;
         width: 185px;
         height: 152px;
-  
+
         a {
-  
+
           // margin-bottom: 50px;
           .firstImg {
             width: 185px;
             height: 105px;
             border-radius: 4px;
           }
-  
+
           /*  .play {
             //svg图片我们要进行下载来
             position: absolute;
@@ -1068,7 +1604,7 @@
             background: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .3) 25.5%, rgba(0, 0, 0, .08) 70%, rgba(0, 0, 0, 0));
           }
         }
-  
+
         .title_text {
           position: absolute;
           bottom: -15px;
@@ -1084,4 +1620,3 @@
       }
     }
   }
-  
