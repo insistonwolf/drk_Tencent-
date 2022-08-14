@@ -301,7 +301,6 @@
         line-height: 42px;
         font-size: 15px;
         position: relative;
-
         .TV-play {
           &::after {
             content: '';
@@ -313,12 +312,13 @@
             background-color: #ccc;
             z-index: 23;
           }
+
           font-weight: 600;
           color: #111;
 
-          &:hover+.allTVDramas {
-            display: block;
-          }
+          // &:hover+.allTVDramas ,.allTVDramas:hover {
+          //   display: block;
+          // }
         }
 
         .allTVDramas {
@@ -395,10 +395,6 @@
 
       .TV-play:hover {
         color: #ff5c38;
-
-        &:hover+.allTVDramas {
-          display: block;
-        }
       }
 
       .Overseas-drama:hover {
@@ -421,7 +417,6 @@
       line-height: 42px;
       font-size: 15px;
       position: absolute;
-
       .TV-play {
         &::after {
           content: '';
@@ -433,6 +428,7 @@
           background-color: #ccc;
           z-index: 23;
         }
+
         font-weight: 600;
         color: #111;
       }
@@ -445,7 +441,7 @@
         top: -280px;
         width: 360px;
         // height: px;
-        padding: 13px 0 0px 30px;
+        padding: 13px 0 10px 30px;
         border-radius: 4px;
         background-color: #fff;
         box-shadow: 0 28px 50px rgba(25 24 40/ 35%);
@@ -545,6 +541,7 @@
         font-weight: 600;
         color: #111;
         position: relative;
+
         &::after {
           content: '';
           position: absolute;
@@ -555,6 +552,7 @@
           background-color: #ccc;
           z-index: 23;
         }
+
         &:hover+.allTVDramas {
           display: block;
         }
@@ -659,6 +657,7 @@
           background-color: #ccc;
           z-index: 23;
         }
+
         font-weight: 600;
         // margin-left: 5px;
         margin-right: 20px;
@@ -776,10 +775,6 @@
           background-color: #ccc;
           z-index: 23;
         }
-
-        &:hover+.allTVDramas {
-          display: block;
-        }
       }
 
       .allTVDramas {
@@ -832,10 +827,12 @@
         content: "";
         pointer-events: none;
       }
-      .Puzzle{
+
+      .Puzzle {
         margin-left: 28px;
         color: #666;
       }
+
       .nurseryRhyme {
         margin-left: 20px;
         color: #666;
@@ -878,12 +875,9 @@
           background-color: #ccc;
           z-index: 23;
         }
+
         font-weight: 600;
         color: #111;
-
-        &:hover+.allTVDramas {
-          display: block;
-        }
       }
 
       .allTVDramas {
@@ -1386,7 +1380,8 @@
         }
 
         &:nth-of-type(5) {
-         color: #ff5c38;
+          color: #ff5c38;
+
           //音乐导航栏
           .allTVDramas {
             //底部的导航栏

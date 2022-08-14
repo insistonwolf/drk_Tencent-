@@ -232,9 +232,6 @@ section .containerRight .nav-barSecond li .title-1 {
   background-color: #ccc;
   z-index: 23;
 }
-.s-second .main_nav-0 .main_nav-0-top .TV-play:hover + .allTVDramas {
-  display: block;
-}
 .s-second .main_nav-0 .main_nav-0-top .allTVDramas {
   z-index: 10;
   position: absolute;
@@ -296,9 +293,6 @@ section .containerRight .nav-barSecond li .title-1 {
 .s-second .main_nav-0 .TV-play:hover {
   color: #ff5c38;
 }
-.s-second .main_nav-0 .TV-play:hover:hover + .allTVDramas {
-  display: block;
-}
 .s-second .main_nav-0 .Overseas-drama:hover {
   color: #ff5c38;
 }
@@ -336,7 +330,7 @@ section .containerRight .nav-barSecond li .title-1 {
   left: 0;
   top: -280px;
   width: 360px;
-  padding: 13px 0 0px 30px;
+  padding: 13px 0 10px 30px;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 28px 50px rgba(25 24 40/35%);
@@ -616,9 +610,6 @@ section .containerRight .nav-barSecond li .title-1 {
   background-color: #ccc;
   z-index: 23;
 }
-.main_nav-2 .main_nav-2-top .TV-play:hover + .allTVDramas {
-  display: block;
-}
 .main_nav-2 .main_nav-2-top .allTVDramas {
   z-index: 10;
   position: absolute;
@@ -706,9 +697,6 @@ section .containerRight .nav-barSecond li .title-1 {
   height: 18px;
   background-color: #ccc;
   z-index: 23;
-}
-.main_nav-2 .main_nav-2-bottom .TV-play:hover + .allTVDramas {
-  display: block;
 }
 .main_nav-2 .main_nav-2-bottom .allTVDramas {
   z-index: 10;
