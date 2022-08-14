@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/reset.min.css">
     <!-- 主界面的css -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3432634_l6b11dac5en.css">
+    <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3432634_172cfxxqo0l.css"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3432634_hwan5hthwla.css">
 </head>
 
 <body>
@@ -25,8 +26,36 @@
                     <img src="./img/logo.png" alt="">
                 </div>
                 <div class="topSerach">
+
                     <form action="">
-                        <input type="text" placeholder="奔跑吧  第六季"><button>全网搜索</button>
+                        <input type="text" placeholder="奔跑吧  第六季" autocomplete="off" style="border: none;" class="input">
+                        <button class="btn"> 全网搜
+                            <div class=" iconfont icon-sousuokuang"></div>
+                            
+                        </button>
+                        <!-- 快捷搜索的入口 -->
+                        <div class="entrance">
+                            <ul class="entranceTop">
+                                <li>历史记录</li>
+                                <li>清除记录</li>
+                                <li>一念之间</li>
+                                <li>历史记录</li>
+                                <li>热门搜索</li>
+                                <li>更多搜索</li>
+                            </ul>
+                            <ul class="entranceBottom">
+                                <li> <i class="iconfont  icon-1_square_solid"></i> <span>月升沧海</span> </li>
+                                <li><i class="iconfont  icon-2_square_solid"></i>斗罗大陆 </li>
+                                <li><i class="iconfont  icon-3_square_solid"></i>斗破苍穹年翻  </li>
+                                <li> <i class="iconfont icon-4_square_solid"></i>欢乐颂3  </li>
+                                <li><i class="iconfont  icon-5_square_solid"></i>奔跑吧 第六季  </li>
+                                <li><i class="iconfont icon-6_square_solid"></i>熊出没之怪兽计划第二季 </li>
+                                <li><i class="iconfont icon-7_square_solid"></i>中国好声音2022  </li>
+                                <li><i class="iconfont icon-8_square_solid"></i>民间怪谈录  </li>
+                                <li><i class="iconfont icon-9_square_solid"></i>小猪佩奇第8季 </li>
+                            </ul>
+                        </div>
+                        <!-- 快捷搜索的出口 -->
                     </form>
                 </div>
                 <div class="leftbin">
@@ -36,6 +65,7 @@
             </div>
         </div>
     </header>
+
     <!-- 中间轮播图的书写 -->
     <section>
         <div class="container">
@@ -83,7 +113,7 @@
                     <img src="./img/0 (10).webp" alt="">
                 </div>
                 <a href="" class="TV-play">电视剧</a>
-                <div class="allTVDramas" id="01" data_id  = '001'>
+                <div class="allTVDramas" id="01" data_id='001'>
                     <p>全局电视剧</p>
                     <a href="" class="car">玫瑰之战</a> <a href="">亲爱的小美人鱼</a><a href="">月升沧海</a>
                     <a href="">民间怪谈</a> <a href="">御赐小刺猬</a><a href="">亲爱的小美人鱼</a>
@@ -97,7 +127,7 @@
             <div class="main_nav-0-bottom">
                 <img src="./img/0 (13).webp" alt="" class="nav-icon">
                 <a href="" class="TV-play">电影
-                    <div class="allTVDramas" id="02" data_id = '002'>
+                    <div class="allTVDramas" id="02" data_id='002'>
                         <p>全部电影</p>
                         <a href="javascript:;" class="car">外太空的莫扎特</a> <a href="javascript:;">老板娘2·王晶新片</a><a
                             href="javascript:;">曼殊沙华</a>
@@ -106,10 +136,11 @@
                         <a href="javascript:;">隐入尘烟</a> <a href="javascript:;">排爆手</a><a href="javascript:;">一周的朋友</a>
                         <a href="javascript:;">冰川时代：巴...</a> <a href="javascript:;">隐形侠·无厘头...</a><a
                             href="javascript:;">误杀瞒天记</a>
-                        <a href="javascript:;">激战游艇</a> <a href="javascript:;">北游记之仙魂下凡</a><a href="javascript:;">恶到必除</a>
+                        <a href="javascript:;">激战游艇</a> <a href="javascript:;">北游记之仙魂下凡</a><a
+                            href="javascript:;">恶到必除</a>
                     </div>
                 </a>
-               
+
                 <a href="" class="large-Cinema-Area">院线大片</a>
                 <a href="" class="Online-drama">自制电影</a>
             </div>
@@ -118,7 +149,7 @@
             <div class="main_nav-1-top">
                 <img src="./img/0 (11).webp" alt="" class="nav-icon">
                 <a href="" class="TV-play">综艺</a>
-                <div class="allTVDramas" id="03" data_id = '003'>
+                <div class="allTVDramas" id="03" data_id='003'>
                     <p>全部综艺</p>
                     <a href="javascript:;" class="car">一往无前的蓝</a> <a href="javascript:;">五哈2</a><a
                         href="javascript:;">半熟恋人</a>
@@ -134,7 +165,7 @@
             <div class="main_nav-1-bottom">
                 <img src="./img/0 (14).webp" alt="" class="nav-icon">
                 <a href="" class="TV-play">动漫</a>
-                <div class="allTVDramas" id="04" data_id = "04">
+                <div class="allTVDramas" id="04" data_id="04">
                     <p>全部动漫</p>
                     <a href="javascript:;">完美世界</a> <a href="javascript:;">古见同学有交流障碍症</a><a
                         href="javascript:;">食锈末世录</a>
@@ -152,7 +183,7 @@
             <div class="main_nav-2-top">
                 <img src="./img/0 (12).webp" alt="" class="nav-icon">
                 <a href="" class="TV-play">少儿</a>
-                <div class="allTVDramas" id="05" data_id = '05'>
+                <div class="allTVDramas" id="05" data_id='05'>
                     <p>全部少儿</p>
                     <a href="javascript:;">动物神探队</a> <a href="javascript:;">宠物旅店</a><a href="javascript:;">狐桃桃和老神仙</a>
                     <a href="javascript:;">红眼镜猪猪</a> <a href="javascript:;">呆爸萌妹</a><a href=javascript:;>超迷你战士</a>
@@ -167,7 +198,7 @@
             <div class="main_nav-2-bottom">
                 <img src="./img/0 (15).webp" alt="" class="nav-icon">
                 <a href="" class="TV-play">记录片</a>
-                <div class="allTVDramas" id="06" data_id = '06'>
+                <div class="allTVDramas" id="06" data_id='06'>
                     <p>全部纪录片</p>
                     <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                         href="javascript:;">青年理工工作者生活研究所</a>
@@ -192,99 +223,111 @@
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
-                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令 第一季</a>
+                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令
+                            第一季</a>
                         <a href="javascript:;">雨林之子</a> <a href="javascript:;">国宝里的新疆</a><a href="javascript:;">千古风流人物
                             第2季</a>
                     </div>
                 </li>
                 <li>体育
-                    <div class="allTVDramas" id="08" data_id = 08>
+                    <div class="allTVDramas" id="08" data_id=08>
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
-                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令 第一季</a>
+                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令
+                            第一季</a>
                         <a href="javascript:;">雨林之子</a> <a href="javascript:;">国宝里的新疆</a><a href="javascript:;">千古风流人物
                             第2季</a>
                     </div>
                 </li>
                 <li>育儿
-                    <div class="allTVDramas" id="09" data_id = '09'>
+                    <div class="allTVDramas" id="09" data_id='09'>
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
                     </div>
                 </li>
             </ul>
             <ul class="rightNavigation">
-                <li>游戏 
+                <li>游戏
                     <div class="allTVDramas" id="10" data_id="10">
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
-                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令 第一季</a>
+                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令
+                            第一季</a>
                         <a href="javascript:;">雨林之子</a> <a href="javascript:;">国宝里的新疆</a><a href="javascript:;">千古风流人物
                             第2季</a>
                     </div>
                 </li>
                 <li>&nbsp; 科技
-                    <div class="allTVDramas" id="11" data_id = "11">
+                    <div class="allTVDramas" id="11" data_id="11">
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
-                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令 第一季</a>
+                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令
+                            第一季</a>
                         <a href="javascript:;">雨林之子</a> <a href="javascript:;">国宝里的新疆</a><a href="javascript:;">千古风流人物
                             第2季</a>
                     </div>
                 </li>
                 <li>NBA</li>
                 <li>知识
-                    <div class="allTVDramas" id="12" data_id = "12">
+                    <div class="allTVDramas" id="12" data_id="12">
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
-                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令 第一季</a>
+                        <a href="javascript:;">自然之色</a> <a href="javascript:;">鱼鹰-海上猛禽</a><a href="javascript:;">美食令
+                            第一季</a>
                         <a href="javascript:;">雨林之子</a> <a href="javascript:;">国宝里的新疆</a><a href="javascript:;">千古风流人物
                             第2季</a>
                     </div>
                 </li>
                 <li>更多
-                    <div class="allTVDramas" id="13" data_id = '13'>
+                    <div class="allTVDramas" id="13" data_id='13'>
                         <p>全部纪录片</p>
                         <a href="javascript:;">拿一座城市下酒</a> <a href="javascript:;">亲爱的敌人</a><a
                             href="javascript:;">青年理工工作者生活研究所</a>
-                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物 第3季</a>
+                        <a href="javascript:;">美力</a> <a href="javascript:;">大象出没的地方</a><a href=javascript:;>千古风流人物
+                            第3季</a>
                         <a href="javascript:;">鲸的秘密 第一季</a> <a href="javascript:;">寻味新加坡第2季</a><a
                             href="javascript:;">了不起的妈妈</a>
                     </div>
                 </li>
             </ul>
         </div>
-         <div class="main_nav-4">
+        <div class="main_nav-4">
             <span class="pic1">
-                <img src="./img/0 (17).webp" alt="" class="client"> 
-                <img src="./img/20220128_v95nat4iyer.avif" alt="" class="load"  >
+                <img src="./img/0 (17).webp" alt="" class="client">
+                <img src="./img/20220128_v95nat4iyer.avif" alt="" class="load">
             </span>
-            <span class="pic2"> 
-                 <img src="./img/0 (18).webp" alt="" class="cinema">
-                 <img src="./img/0 (19).webp" alt="" class="vip">
+            <span class="pic2">
+                <img src="./img/0 (18).webp" alt="" class="cinema">
+                <img src="./img/0 (19).webp" alt="" class="vip">
             </span>
 
         </div>
@@ -293,7 +336,7 @@
     <div class="mod_hd">
         <div class="title">
             <h2>今日热门</h2>
-            <a href="">VIP首3月6折 赢斗破苍穹手办</a>
+            <a href="">VIP首3月6折 赢<i class="iconfont "></i>斗破苍穹手办</a>
         </div>
         <div class="Hotspot_switching">
             <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
@@ -512,6 +555,8 @@
             </div> -->
         </div> <!-- 总的视频 -->
     </div>
+
+    <!--  -->
 </body>
 <script src="./js/index.js"></script>
 

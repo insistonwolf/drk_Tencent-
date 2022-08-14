@@ -110,7 +110,7 @@
         })
     }
     //事件移除方法
-    function tyLeave( attr) {
+    function tyLeave(attr) {
 
         // argu.addEventListener('mouseleave', function (e) {
         //     let target = e.target,
@@ -175,4 +175,24 @@
     btnNext.addEventListener('click', function () {
         list_numA.style.display = 'none'
     })
+
+})();
+
+/* 快速导航的的操作 */
+(function () {
+
+    let input = document.querySelector('.input'),
+        entrance = document.querySelector('.entrance'),
+        container = document.querySelector('.container');
+    console.log(input);
+    console.log(entrance);
+    //   开始写注册事件
+    input.addEventListener('click', function () {
+        entrance.style.display = 'block';
+    }); 
+    container.addEventListener('click',function(){
+        entrance.style.display = 'none';
+    });
+
 })()
+
