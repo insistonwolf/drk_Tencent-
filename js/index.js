@@ -85,25 +85,24 @@
     // console.log(music);
     // console.log(allTVDramas);
     //鼠标移入事件的方法
-    // function tvEnter(argu, attr) {
-    //     argu.addEventListener('mouseenter', function () {
-    //         allTVDramas.forEach(item => {
-    //             let{id,className,data_id} = item
-    //             console.log(id,className);
-    //             console.log(item);
-    //             // argu.querySelector()
-    //             // console.log(item.data_id);
-    //             // let data_id = argu.getElementById()
-    //             // console.log(argu.getElementById);
-    //             if (argu === item.data_id) {
-    //                 item.style.display = 'block';
-    //                 console.log(item);
-    //             } else {
-    //                 item.style.display = 'none';
-    //             }hghb
-    //         })
-    //     })
-    // }
+    function tvEnter(argu, attr) {
+        argu.addEventListener('mouseenter', function (e) {
+              
+            let target  = e.target,
+                data_id = target.getAttribute
+            allTVDramas.forEach(item => {
+                // console.log(item.data_id);
+                // let data_id = argu.getElementById()
+                // console.log(argu.getElementById);
+                if (argu === item.data_id) {
+                    item.style.display = 'block';
+                    console.log(item);
+                } else {
+                    item.style.display = 'none';
+                }hghb
+            })
+        })
+    }
     function tvEnter(argu, attr) {
         argu.addEventListener('mouseenter', function () {
             attr.style.display = 'block'
@@ -189,10 +188,53 @@
     //   开始写注册事件
     input.addEventListener('click', function () {
         entrance.style.display = 'block';
-    }); 
-    container.addEventListener('click',function(){
+    });
+    container.addEventListener('click', function () {
         entrance.style.display = 'none';
     });
+    /* 给导航栏中的历史记录我的来做鼠标移入个移除事件 */
+    let history = document.querySelector('.history'),
+        historyDiv = document.querySelector('.historyDiv');
+    history.addEventListener('mouseenter', function () {
+        historyDiv.style.display = 'block';
+    })
+    historyDiv.addEventListener('mouseleave', function () {
+        historyDiv.style.display = 'none';
+    })
+    /* 导航栏中我们中的体验的进入和移除的事件 */
+    let platform = document.querySelector('.platform'),
+        platformImg = document.querySelector('.platformImg');
+    platform.addEventListener('mouseenter', function (e) {
+
+        let target = e.target;
+            targetTag = target.className;
+            if (targetTag = '.platform') {
+                platformImg.style.opacity = '1';
+                  if (targetTag === '.platformImg') {
+                platformImg.style.opacity = '1';
+            }
+            }else {
+                platformImg.style.opacity = 'none';
+            }
+          
+    })
+    platformImg.addEventListener('mouseleave', function () {
+        platformImg.style.opacity = '0';
+    })
+
+    //
+    let experience = document.querySelector('.experience'),
+    experienceDiv = document.querySelector('.experienceDiv');
+    experience.addEventListener('mouseenter', function (e) {
+        console.log(1);
+        e.stopPropagation();
+        experienceDiv.style.display = 'block';
+        platformImg.style.opacity = '0';
+
+    })
+    experienceDiv.addEventListener('mouseleave', function () {
+        experienceDiv.style.display = 'none';
+    })
 
 })()
 

@@ -7,8 +7,7 @@
     position: absolute;
     z-index: 9;
     // box-shadow: #666;
-
-    background: rgba(255,255,255,.14);
+    background: rgba(255, 255, 255, .14);
     // background-color: #ff5c38;
 
     .topCenter {
@@ -27,11 +26,13 @@
       box-shadow: 0 4px 18px rgb(17 18 38 / 7%);
 
       .topLogo {
-        img {
-          width: 135px;
-          height: 36px;
-          background-image: url(/tencentvideo/vstyle/web/v6/style/img/common/sprite_head_logo.svg) 0 -36px no-repeat;
-        }
+        // img {
+        width: 135px;
+        height: 36px;
+        background-image: url(../img/logo3.png);
+        z-index: 25;
+        // background-color: red;
+        // }
       }
 
       .topSerach {
@@ -45,6 +46,15 @@
         transition: max-width .2s ease;
         border-color: transparent;
 
+        .me {
+          position: absolute;
+          left: 830px;
+          top: 2px;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+        }
+
         .entrance {
           position: absolute;
           left: 15px;
@@ -57,6 +67,7 @@
           z-index: 10;
           display: none;
 
+          //我的图片来进行的定位
           .entranceTop {
             display: flex;
             justify-content: space-around;
@@ -66,31 +77,36 @@
               &:first-of-type {
                 color: #999;
                 font-size: 14px;
-                margin: 8px 188px 8px 8px; 
+                margin: 8px 188px 8px 8px;
               }
-              &:nth-of-type(2){
+
+              &:nth-of-type(2) {
                 margin-top: 8px;
                 color: #999;
               }
-              &:nth-of-type(3){
+
+              &:nth-of-type(3) {
                 font-size: 13px;
                 text-align: left;
                 line-height: 35px;
                 width: 128px;
                 height: 35px;
-                background-color:red;
+                background-color: red;
                 margin: 0 112px 11px 9px;
               }
-              &:nth-of-type(4){
+
+              &:nth-of-type(4) {
                 opacity: 0;
                 margin-left: 3px;
               }
-              &:nth-of-type(5){
+
+              &:nth-of-type(5) {
                 color: #999;
                 font-size: 14px;
-                margin: 8px 188px 5px 8px; 
+                margin: 8px 188px 5px 8px;
               }
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-top: 8px;
                 color: #999;
               }
@@ -99,7 +115,7 @@
         }
 
         .entranceBottom {
-         li {
+          li {
             width: 315px;
             height: 22px;
             margin-left: 12px;
@@ -111,115 +127,143 @@
             // line-height: 22px;
             text-overflow: ellipsis;
             white-space: nowrap;
-            &:first-of-type{
+
+            &:first-of-type {
               // background-color: #ff5c38;
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-1_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-1_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
+
             //
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-2_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-2_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
+
             //
             //
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-3_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-3_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
+
             //
             //
-            &:nth-of-type(4){
+            &:nth-of-type(4) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-4_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-4_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
+
             //
             //
-            &:nth-of-type(5){
+            &:nth-of-type(5) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-5_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-5_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
-            &:nth-of-type(6){
+
+            &:nth-of-type(6) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-6_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-6_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
-            &:nth-of-type(7){
+
+            &:nth-of-type(7) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-7_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-7_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
-            &:nth-of-type(8){
+
+            &:nth-of-type(8) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-8_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-8_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
-            &:nth-of-type(9){
+
+            &:nth-of-type(9) {
               display: flex;
               align-items: center;
-              &:hover{
+
+              &:hover {
                 background-color: #eee;
               }
-              .icon-9_square_solid{
-               font-size: 25px;
-               z-index: 10; 
+
+              .icon-9_square_solid {
+                font-size: 25px;
+                z-index: 10;
               }
             }
+
             //
-         }
+          }
         }
 
       }
@@ -270,9 +314,28 @@
       }
     }
 
-    .letfbin {
-      width: 96px;
+    .leftbin {
+      width: 120px;
       height: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+    
+      .platform {
+        width: 26px;
+        height: 26px;
+        position: relative;
+            .experience{
+              width: 26px;
+              height: 26px;
+            }
+        .experience {
+          position: absolute;
+          left: 39px;
+          top: 0;
+        }
+      }
     }
   }
 
@@ -293,7 +356,109 @@
       height: 432px;
       background: rgba(15, 15, 30, .4);
       z-index: 20;
+       //平台图片的体验
+      .platformImg {
+        position: absolute;
+        background: url(../img/123.avif) center bottom / 100% no-repeat;
+        width: 280px;
+        height: 231px;
+        top: -31px;
+        left: calc(50% - 165px);
+        z-index: 10;
+        color: rgb(0, 0, 40);
+        z-index: 23;
+        // display: none;
+        opacity: 0;
+      }
 
+      .platformImg::after {
+        content: "去创作";
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        left: 8px;
+        bottom: 35px;
+        width: 260px;
+        height: 30px;
+        background: #ff6022;
+        border-radius: 20px;
+        // display: none;
+      }
+      .historyDiv{
+        ul{
+          
+          display: flex;
+          justify-content: space-around;
+          font-size: 16px;
+          line-height: 50px;
+          height: 50px;
+          font-weight: 500;
+          background-color: #f8f8f8;
+          border-radius: 5px 5px 0 0;
+        }
+        position: absolute;
+        width: 290px;
+        height: 431px;
+        top: -15px;
+        left: 0;
+        z-index: 10;
+        color: rgb(0, 0, 40);
+        background-color:#fff;
+        z-index: 23;
+        border-radius:5px;
+        display: none;
+      }
+      .historyDiv::after{
+        position: absolute;
+        left: 28px;
+        bottom: 190px;
+        color: #a3a3a3;
+        background-color: #f8f8f8;
+        font-size: 15px;
+        content: "你暂时还没有看过任何视频坳~";
+      }
+      //体验
+      .experienceDiv {
+        position: absolute;
+        width: 170px;
+        height: 180px;
+        top: -15px;
+        left: 90px;
+        z-index: 10;
+        color: rgb(0, 0, 40);
+        background-color:#fff;
+        z-index: 23;
+        border-radius:5px;
+        display: none;
+       
+        ul {
+          margin: 20px 0 30px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-content:flex-start;
+          font-size: 14px;
+          font-weight: 500;
+          color: #666;
+          li{
+            margin-bottom: 18px;
+            &:nth-of-type(4){
+              color: #fff;
+              border-radius: 15px;
+              background: linear-gradient(90deg,#ffb821 0,#ff5c38 45%,#ff1459);
+              width: 120px;
+              height: 30px;
+              border-radius: 15px;
+              text-align: center;
+              line-height: 30px;
+            
+            }
+          }
+        }
+
+
+      }
       .nav-barFirst {
         li {
           width: 275px;
