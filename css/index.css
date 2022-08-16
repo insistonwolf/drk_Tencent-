@@ -1556,35 +1556,46 @@ section .containerRight .nav-barSecond li .title-1 {
   margin: 0 auto;
 }
 .list_sum {
-  justify-content: flex-start;
+  width: 1200px;
+  height: 190;
+  background-color: #ffb821;
+  margin: 0 auto;
+  position: relative;
 }
 .list_sum .list_num {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
-  justify-content: space-around;
-  width: 1200px;
+  width: 2400px;
   height: 192px;
   margin: 0 auto;
+}
+.list_sum .list_num .list_item:first-of-type {
+  margin-left: 0px;
+}
+.list_sum .list_num .list_item:nth-of-type(6) {
+  margin-right: 160px;
 }
 .list_sum .list_num .list_item {
   position: relative;
   width: 185px;
   height: 152px;
-}
-.list_sum .list_num .list_item a {
-  /*  .play {
-            //svg图片我们要进行下载来
-            position: absolute;
-            top: 6px;
-            left: 6px;
-            width: 14px;
-            height: 18px;
-            background: url() 0 0 no-repeat;
-          } */
+  margin-left: 16px;
 }
 .list_sum .list_num .list_item a .firstImg {
   width: 185px;
   height: 105px;
   border-radius: 4px;
+}
+.list_sum .list_num .list_item a .play {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 14px;
+  height: 18px;
+  background: #ff1459;
+  background: url(../img/mark.png) 0 0 no-repeat;
 }
 .list_sum .list_num .list_item a .videoTime {
   position: absolute;

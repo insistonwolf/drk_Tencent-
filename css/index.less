@@ -321,15 +321,17 @@
       justify-content: space-around;
       align-items: center;
       color: #fff;
-    
+
       .platform {
         width: 26px;
         height: 26px;
         position: relative;
-            .experience{
-              width: 26px;
-              height: 26px;
-            }
+
+        .experience {
+          width: 26px;
+          height: 26px;
+        }
+
         .experience {
           position: absolute;
           left: 39px;
@@ -356,7 +358,8 @@
       height: 432px;
       background: rgba(15, 15, 30, .4);
       z-index: 20;
-       //平台图片的体验
+
+      //平台图片的体验
       .platformImg {
         position: absolute;
         background: url(../img/123.avif) center bottom / 100% no-repeat;
@@ -385,9 +388,10 @@
         border-radius: 20px;
         // display: none;
       }
-      .historyDiv{
-        ul{
-          
+
+      .historyDiv {
+        ul {
+
           display: flex;
           justify-content: space-around;
           font-size: 16px;
@@ -397,6 +401,7 @@
           background-color: #f8f8f8;
           border-radius: 5px 5px 0 0;
         }
+
         position: absolute;
         width: 290px;
         height: 431px;
@@ -409,7 +414,8 @@
         border-radius:5px;
         display: none;
       }
-      .historyDiv::after{
+
+      .historyDiv::after {
         position: absolute;
         left: 28px;
         bottom: 190px;
@@ -418,6 +424,7 @@
         font-size: 15px;
         content: "你暂时还没有看过任何视频坳~";
       }
+
       //体验
       .experienceDiv {
         position: absolute;
@@ -427,38 +434,41 @@
         left: 90px;
         z-index: 10;
         color: rgb(0, 0, 40);
-        background-color:#fff;
+        background-color: #fff;
         z-index: 23;
-        border-radius:5px;
+        border-radius: 5px;
         display: none;
-       
+
         ul {
           margin: 20px 0 30px 20px;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          align-content:flex-start;
+          align-content: flex-start;
           font-size: 14px;
           font-weight: 500;
           color: #666;
-          li{
+
+          li {
             margin-bottom: 18px;
-            &:nth-of-type(4){
+
+            &:nth-of-type(4) {
               color: #fff;
               border-radius: 15px;
-              background: linear-gradient(90deg,#ffb821 0,#ff5c38 45%,#ff1459);
+              background: linear-gradient(90deg, #ffb821 0, #ff5c38 45%, #ff1459);
               width: 120px;
               height: 30px;
               border-radius: 15px;
               text-align: center;
               line-height: 30px;
-            
+
             }
           }
         }
 
 
       }
+
       .nav-barFirst {
         li {
           width: 275px;
@@ -1944,23 +1954,38 @@
 
   //视频的书写
   .list_sum {
-    // width: 7200px;
+    width: 1200px;
+    height: 190;
+    background-color: #ffb821;
+    margin: 0 auto;
+    position: relative;
     // display: flex;
-    justify-content: flex-start;
+    // justify-content: flex-start;
 
     .list_num {
+      position: absolute;
+      left: 0;
+      top: 0;
       display: flex; //开启弹性盒子布局
-      justify-content: space-around;
-      width: 1200px;
+      // justify-content: space-around;
+
+      width: 2400px;
       height: 192px;
       margin: 0 auto;
-
+      .list_item:first-of-type {
+        margin-left: 0px;
+      }
+      .list_item:nth-of-type(6){
+        margin-right: 160px;
+      }
       // position: fixed;
       .list_item {
         position: relative;
         width: 185px;
         height: 152px;
+        margin-left: 16px;
 
+        // background-color: red;
         a {
 
           // margin-bottom: 50px;
@@ -1970,15 +1995,17 @@
             border-radius: 4px;
           }
 
-          /*  .play {
+          .play {
             //svg图片我们要进行下载来
             position: absolute;
             top: 6px;
             left: 6px;
             width: 14px;
             height: 18px;
-            background: url() 0 0 no-repeat;
-          } */
+            background: #ff1459;
+            background: url(../img/mark.png) 0 0 no-repeat;
+          }
+
           .videoTime {
             position: absolute;
             left: 0;
