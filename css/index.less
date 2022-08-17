@@ -16,7 +16,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      opacity: 0.5;
+      // opacity: 0.5;
       margin: 0 auto;
       left: 150px;
       top: 0;
@@ -41,7 +41,7 @@
         height: 40px;
         background-color: #ff5c38;
         border-radius: 20px 20px 20px 20px;
-        background-color: rgba(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 18px rgb(17 18 38 / 7%);
         transition: max-width .2s ease;
         border-color: transparent;
@@ -62,6 +62,8 @@
           width: 348px;
           height: 406px;
           // background-color: #ffff;
+          // background-color: #fff;
+          box-shadow: 0 28px 50px rgb(25 24 40 / 35%);
           background: rgba(255, 255, 255, .98);
           // box-shadow: 0 28px 50px rgb(25 24 40 / 35%);
           z-index: 10;
@@ -91,8 +93,12 @@
                 line-height: 35px;
                 width: 128px;
                 height: 35px;
-                background-color: red;
+                background-color: #a2a2a2;
                 margin: 0 112px 11px 9px;
+                border-radius: 15px;
+                text-align: left;
+                line-height: 35px;
+                font-size: 1px;
               }
 
               &:nth-of-type(4) {
@@ -118,11 +124,11 @@
           li {
             width: 315px;
             height: 22px;
-            margin-left: 12px;
+            margin-left: 14px;
             padding: 5px;
             overflow: hidden;
             border-radius: 2px;
-            color: #111;
+            color: #666;
             font-size: 16px;
             // line-height: 22px;
             text-overflow: ellipsis;
@@ -1959,9 +1965,9 @@
     background-color: #ffb821;
     margin: 0 auto;
     position: relative;
+
     // display: flex;
     // justify-content: flex-start;
-
     .list_num {
       position: absolute;
       left: 0;
@@ -1972,12 +1978,15 @@
       width: 2400px;
       height: 192px;
       margin: 0 auto;
+
       .list_item:first-of-type {
         margin-left: 0px;
       }
-      .list_item:nth-of-type(6){
+
+      .list_item:nth-of-type(6) {
         margin-right: 160px;
       }
+
       // position: fixed;
       .list_item {
         position: relative;
@@ -2031,6 +2040,1107 @@
           white-space: normal;
           word-break: break-all;
         }
+      }
+    }
+  }
+
+  //知识区的书写
+  .mod_hd_kn {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  //知识区的书写二
+
+  //视频区区的书写
+  .mod_hd_video {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      width: 515px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      .title1 {
+        width: 139px;
+        height: 39px;
+        border-radius: 15px;
+        background: linear-gradient(90deg, #ffb821 0, #ff5c38 45%, #ff1459);
+        text-align: center;
+        line-height: 39px;
+        font-size: 15px;
+        color: #fff;
+      }
+
+      .title1:hover {
+        background: linear-gradient(90deg, #ffb821 0, #ff5c38 45%, #ff1459);
+      }
+    }
+
+    .title2 {
+      width: 89px;
+      height: 39px;
+      border-radius: 15px;
+      background: #ccc;
+      text-align: center;
+      line-height: 39px;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .title2:hover {
+      background: linear-gradient(90deg, #ffb821 0, #ff5c38 45%, #ff1459);
+    }
+  }
+
+  .Hotspot_switching {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .icon-zuojiantou {
+      // margin-right: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #ccc;
+    }
+
+    span {
+      // margin-right: 1px;
+      width: 45px;
+      margin-left: 25px;
+      margin-right: 15px;
+      color: #666;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .icon-youjiantou {
+      font-size: 10px;
+      margin-right: 8px;
+      font-weight: 600;
+    }
+  }
+
+  //开始写播放视频
+  .video_vip {
+    width: 1200px;
+    height: 366px;
+    margin: 0 auto;
+    display: flex;
+
+    .play {
+      width: 591px;
+      height: 366px;
+      background-color: #ff1459;
+    }
+
+    .playCon {
+      .money {
+        width: 609px;
+        height: 185px;
+        background: #ff1459;
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+          width: 85px;
+          height: 163px;
+          background-color: #111;
+        }
+      }
+
+      .fill {
+        width: 609px;
+        height: 185px;
+        background-color: #ffb821;
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+          width: 85px;
+          height: 163px;
+          background-color: #111;
+        }
+      }
+    }
+  }
+  
+
+ // 花絮
+ //教育的书写
+ .mod_trailer{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 60px;
+  // background-color: aqua;
+  margin: 335px auto 10px auto;
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    // margin-top: 30px;
+    h2 {
+      color: #111;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    a {
+      margin: 20px 0 0 20px;
+      font-size: 13px;
+      color: #666;
+      cursor: pointer;
+    }
+  }
+
+  .Hotspot_switching {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .icon-zuojiantou {
+      // margin-right: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #ccc;
+    }
+
+    span {
+      // margin-right: 1px;
+      width: 45px;
+      margin-left: 25px;
+      margin-right: 15px;
+      color: #666;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .icon-youjiantou {
+      font-size: 10px;
+      margin-right: 8px;
+      font-weight: 600;
+    }
+  }
+}
+ 
+ //英美区
+  .mod_hd_Britain{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+  .list_sum_Britain {
+    width: 1200px;
+    height: 190;
+    background-color: #ffb821;
+    margin: 0 auto;
+    position: relative;
+
+    // display: flex;
+    // justify-content: flex-start;
+    .list_num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex; //开启弹性盒子布局
+      // justify-content: space-around;
+
+      width: 2400px;
+      height: 192px;
+      margin: 0 auto;
+
+      .list_item:first-of-type {
+        margin-left: 0px;
+      }
+
+      .list_item:nth-of-type(6) {
+        margin-right: 160px;
+      }
+
+      // position: fixed;
+      .list_item {
+        position: relative;
+        width: 185px;
+        height: 259px;
+        margin-left: 16px;
+
+        // background-color: red;
+        a {
+
+          // margin-bottom: 50px;
+          .firstImg {
+            width: 185px;
+            height: 259px;
+            border-radius: 4px;
+          }
+
+          .play {
+            //svg图片我们要进行下载来
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 14px;
+            height: 18px;
+            background: #ff1459;
+            background: url(../img/mark.png) 0 0 no-repeat;
+          }
+
+          .videoTime {
+            position: absolute;
+            left: 0;
+            bottom: 48px;
+            width: auto;
+            height: 20px;
+            padding: 10px 10px 4px;
+            color: #fff;
+            font-weight: 500;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .3) 25.5%, rgba(0, 0, 0, .08) 70%, rgba(0, 0, 0, 0));
+          }
+        }
+
+        .title_text {
+          position: absolute;
+          bottom: -55px;
+          width: 185px;
+          height: 44px;
+          overflow: hidden;
+          font-size: 14px;
+          letter-spacing: 1px;
+          line-height: 23px;
+          white-space: normal;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+   
+  //教育的书写
+  .mod_edu{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 335px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+   
+
+   //时尚热度棒区的书写
+   .mod_hd_fashionPopularity{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+   
+  //音乐区的书写
+  .mod_hd_music{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+   
+  //娱乐热点
+  .mod_hd_hotspot{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+  //母婴区的书写
+    
+  .mod_hd_motherAndBaby{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+  //星座区的书写
+  
+  .mod_hd_constellation {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+   //汽车区的书写
+
+   .mod_hd_car {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 210px auto 10px auto;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .advertisement{
+    width: 1200px;
+    margin: 220px auto 40px auto;
+    img {
+       width: 1200px;
+    }
+  }
+
+  .footer {
+    width: 1519.2px;
+    height: 453px;
+    overflow: hidden;
+    border-top: 1px solid red;
+    margin-top: 10px;
+
+    .footer_top {
+      margin: 30px auto 10px auto;
+      width: 1120px;
+      height: 209px;
+      // background: #999;
+      display: flex;
+      justify-content: space-between;
+
+      .top_one {
+        width: 210px;
+        height: 180px;
+        // background-color: #ff1459;
+
+        h5 {
+          width: 210px;
+          height: 26px;
+          font-size: 17px;
+          font-weight: 700;
+          letter-spacing: normal;
+          line-height: 26px;
+          color: #666;
+          text-indent: 2rem;
+          text-align: left;
+        }
+
+        .newTv {
+          margin-top: 18px;
+          width: 210px;
+          height: 160px;
+          display: flex;
+          flex-wrap: wrap;
+          // background-color: #ff5c38;
+          justify-content: space-around;
+          list-style: none;
+
+          li {
+            width: 45px;
+            height: 21px;
+            margin-left: 15px;
+            font-size: 12px;
+            color: blank;
+
+            &:nth-of-type(10) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .featuredRecommendation {
+        width: 79px;
+        height: 79px;
+
+        h5 {
+          width: 79px;
+          height: 26px;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: normal;
+          line-height: 26px;
+          color: #666;
+          margin-bottom: 18px;
+          // text-align: left;
+        }
+
+        li {
+
+          list-style: none;
+          margin-bottom: 15px;
+          color: black;
+        }
+      }
+
+      .softDown {
+        width: 400px;
+        height: 131px;
+        // background: red;
+
+        h5 {
+          width: 400px;
+          height: 26px;
+          font-size: 17px;
+          font-weight: 700;
+          letter-spacing: normal;
+          line-height: 26px;
+          color: #666;
+          text-align: left;
+        }
+
+        .h5_bottom {
+          width: 400px;
+          height: 90px;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            width: 80px;
+            height: 90px;
+            // background: #ffb821;
+
+            &:first-of-type {
+              .common_ipone {
+                margin: 13px auto 0 19px;
+                font-weight: 500;
+              }
+            }
+
+            &:nth-of-type(2) {
+              // background: #ff1459;
+            }
+
+            svg {
+              margin: 10px 0 0 15px;
+            }
+
+            .common_window {
+              margin: 13px auto 0 8px;
+              font-weight: 500;
+            }
+
+            &:nth-of-type(3) {
+              .common_Mac {
+                margin: 13px auto 0 19px;
+                font-weight: 500;
+              }
+            }
+
+            &:nth-of-type(4) {
+              .common_iPad {
+                margin: 13px auto 0 19px;
+                font-weight: 500;
+              }
+            }
+
+            &:nth-of-type(5) {
+              .common_TV {
+                margin: 13px auto 0 19px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+      .server {
+        width: 360px;
+        height: 209px;
+        // background: #ff6022;
+
+        h5 {
+          width: 360px;
+          height: 26px;
+          font-size: 17px;
+          font-weight: 700;
+          letter-spacing: normal;
+          line-height: 26px;
+          color: #666;
+          text-align: left;
+          // background: #111;
+        }
+
+        .power {
+          width: 360px;
+          height: 160px;
+          color: #666;
+          display: flex;
+          justify-content: space-between;
+
+          .power_first {
+            width: 180px;
+            height: 160px;
+
+            li {
+              margin-bottom: 10px;
+            }
+          }
+
+          .power_secod {
+            width: 180px;
+            height: 160px;
+
+            li {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_center {
+      width: 1519.2px;
+      height: 170px;
+      margin: 0 auto;
+      font-size: 13px;
+      // color: #fff;
+
+      .footer_center_one {
+        width: 900px;
+        height: 30px;
+        margin: 0 auto;
+
+        a {
+          color: #666;
+        }
+      }
+
+      .footer_center_two {
+        width: 700px;
+        height: 30px;
+        margin-left: 460px;
+
+        a {
+          color: #666;
+        }
+      }
+
+      .footer_center_there {
+        width: 500px;
+        height: 30px;
+        margin-left: 515px;
+
+        a {
+          color: #666;
+        }
+      }
+
+      .footer_center_fourth {
+        width: 1519.2px;
+        height: 30px;
+        margin-left: 600px;
+
+        a {
+          color: #666;
+        }
+      }
+
+    }
+
+    // .footer_footer {
+    //   width: 1519.2px;
+    //   height: 59px;
+    //   margin: 0 auto;
+    //   background-color: cadetblue;
+    // }
+
+    .footer_center_five {
+      width: 112px;
+      height: 52px;
+      margin-left: 600px;
+      img {
+
+        width: 112px;
+        height: 52px;
+
       }
     }
   }

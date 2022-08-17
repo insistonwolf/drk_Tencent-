@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/index.css">
     <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3432634_172cfxxqo0l.css"> -->
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3432634_hwan5hthwla.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -109,7 +111,7 @@
                         </svg>
                     </div>
                     <div class="history">
-                       
+
                         <svg class="svg_quick_icon svg_icon_time" viewBox="0 0 26 26" width="26" height="26">
                             <circle cx="13" cy="13" r="11" fill="none" stroke="currentColor" stroke-width="2"></circle>
                             <path d="M14 13h3c.6 0 1 .4 1 1s-.4 1-1 1h-4c-.6 0-1-.4-1-1V8c0-.6.4-1 1-1s1 .4 1 1v5z"
@@ -134,7 +136,8 @@
                                 <path
                                     d="M15 18v2H7c-2.2 0-4-1.8-4-4V7c0-2.2 1.8-4 4-4h12c2.2 0 4 1.8 4 4v6h-2V7c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h8zm0 5v2H9v-2h6zM21 23h2v-6c0-.6-.4-1-1-1s-1 .4-1 1v6z"
                                     fill="currentColor"></path>
-                                <path d="M19 21l3 2M25 21l-3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"></path>
+                                <path d="M19 21l3 2M25 21l-3 2" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="square"></path>
                             </svg>
                         </div>
                         <!-- 平台的图片 -->
@@ -442,216 +445,371 @@
     <!-- 今日热点视频开始 -->
     <!-- <div class = "hotVideo"> -->
     <!-- </div> -->
-    
-        <div class="list_sum">
-            <div class="list_num">
-                <!-- <div class="list_item data"> -->
-                    <!-- <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496.jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">01:03</div>
-                        <span class="play"></span>
-                    </a> -->
-                    <!-- <div class="title_text">
-                        立陶宛官员团窜台，外交部：中方将坚决回击
-                    </div> -->
-                <!-- </div> -->
-                <!-- <div class="list_item data">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496 (1).jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:40</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        我国成功发射一箭十六星 看长征六号火箭发射现场
-                    </div>
-                </div>
-                <div class="list_item  data">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/0 (20).webp" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">21:59</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        与世界说2·首播 苏翊鸣分享冬奥夺冠趣事
-                    </div>
-                </div>
-                <div class="list_item data">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/285.jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">01:56</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        FBI带走特朗普隐藏的涉密文件
-                    </div>
-                </div>
-                <div class="list_item data">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/285.png" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:10</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        糖水爷爷后续：被网暴后不再出摊，社区或帮安排工作
-                    </div>
-                </div>
-                <div class="list_item data">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496 (2).jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:12</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        孙海洋称将支付20万元悬赏金：对方儿子也被拐
-                    </div>
-                </div> -->
-            
-            <!-- <div class="list_num">
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496.jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">01:03</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        立陶宛官员团窜台，外交部：中方将坚决回击
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496 (1).jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:40</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        我国成功发射一箭十六星 看长征六号火箭发射现场
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/0 (20).webp" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">21:59</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        与世界说2·首播 苏翊鸣分享冬奥夺冠趣事
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/285.jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">01:56</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        FBI带走特朗普隐藏的涉密文件
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/285.png" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:10</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        糖水爷爷后续：被网暴后不再出摊，社区或帮安排工作
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496 (2).jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:12</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        孙海洋称将支付20万元悬赏金：对方儿子也被拐
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="list_num">
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496.jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">01:03</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        立陶宛官员团窜台，外交部：中方将坚决回击
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496 (1).jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:40</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        我国成功发射一箭十六星 看长征六号火箭发射现场
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/0 (20).webp" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">21:59</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        与世界说2·首播 苏翊鸣分享冬奥夺冠趣事
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/285.jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">01:56</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        FBI带走特朗普隐藏的涉密文件
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/285.png" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:10</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        糖水爷爷后续：被网暴后不再出摊，社区或帮安排工作
-                    </div>
-                </div>
-                <div class="list_item">
-                    <a href=""
-                        target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-                        <img src="./img/496 (2).jfif" alt="" class="firstImg" alt="立陶宛官员团窜台，外交部：中方将坚决回击">
-                        <div class="videoTime">00:12</div>
-                        <span class="play"></span>
-                    </a>
-                    <div class="title_text">
-                        孙海洋称将支付20万元悬赏金：对方儿子也被拐
-                    </div>
-                </div>
-            </div> -->
-        </div> 
+    <div class="list_sum">
+        <div class="list_num">
+        </div>
     </div>
 
-</body>
-<script src="./js/index.js"></script>
-</html>
+    <!-- 知识精选课程 -->
+    <div class="mod_hd_kn">
+        <div class="title">
+            <h2>知识精选课程</h2>
+            <!-- <a href="">VIP首3月6折 赢<i class="iconfont "></i>斗破苍穹手办</a> -->
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number"><i>1</i>/8</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 知识的内容 -->
+    <div class="list_sum ">
+        <div class="list_num  data_2">
+        </div>
+    </div>
+    <!-- 视频无限制 -->
+    <div class="mod_hd_video">
+        <div class="title">
+            <h2>短视频无先刷</h2>
+            <div class="title1">为你推荐</div>
+            <div class="title2">艺术</div>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 视频区  -->
+    <div class="video_vip">
+        <div class="play"></div>
+        <div class="playCon">
+            <ul class="money">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="fill">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
 
+        </div>
+    </div>
+      
+
+    <!-- 花絮剧透 预告片 -->
+      <!-- 教育 -->
+      <div class="mod_trailer">
+        <div class="title">
+            <h2>花絮</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 教育 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  trailer_num_num">
+
+        </div>
+    </div>
+
+    <!-- 英美剧剧 -->
+    <div class="mod_hd_Britain">
+        <div class="title">
+            <h2>英美剧</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou" style="opacity: 0;" ></i> 
+            <span class="number" style="opacity: 0;" >1/2</span>
+             <i class=" iconfont  icon-youjiantou" style="opacity: 0;" ></i> 
+        </div>
+    </div>
+    <div class="list_sum_Britain">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  Britain_num_num">
+
+        </div>
+    </div>
+      <!-- 教育 -->
+    <div class="mod_edu">
+        <div class="title">
+            <h2>教育精选</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 教育 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  Education_num_num">
+
+        </div>
+    </div>
+
+
+    <!-- 时尚-->
+    <div class="mod_hd_fashionPopularity">
+        <div class="title">
+            <h2>时尚热度榜</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 时尚 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  fashion_num_num">
+
+        </div>
+    </div>
+
+    <!-- 音乐演唱会 -->
+    <div class="mod_hd_music">
+        <div class="title">
+            <h2>音乐演唱会</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 音乐 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  music_num_num">
+
+        </div>
+    </div>
+    <!-- 娱乐热点-->
+    <div class="mod_hd_hotspot">
+        <div class="title">
+            <h2>娱乐热点</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 娱乐热点 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num   hotspot_num_num">
+
+        </div>
+    </div>
+
+    <!-- 母婴-->
+    <div class="mod_hd_motherAndBaby">
+        <div class="title">
+            <h2>母婴常识</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 母婴常识 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  motherAndBaby_num_num">
+
+        </div>
+    </div>
+
+
+    <!-- 星座-->
+    <div class="mod_hd_constellation">
+        <div class="title">
+            <h2>星座聚焦</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 星座的内容 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  constellation_num_num">
+
+        </div>
+    </div>
+
+    <!-- 汽车资讯 -->
+    <div class="mod_hd_car">
+        <div class="title">
+            <h2>知识精选课程</h2>
+        </div>
+        <div class="Hotspot_switching">
+            <i class="iconfont  icon-zuojiantou"></i> <!-- 左边箭头 -->
+            <span class="number">1/2</span>
+            <i class=" iconfont  icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 汽车的内容 -->
+    <div class="list_sum ">
+        <!-- 开启盒子布局的 -->
+        <div class="list_num  car_num_num">
+
+        </div>
+    </div>
+
+    <!-- 广告 -->
+    <div class="advertisement">
+        <img src="./img/jietuping.png" alt="">
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="footer_top">
+            <div class="top_one">
+                <h5>热门频道</h5>
+                <div class="newTv">
+                    <li>电视剧</li>
+                    <li>综艺</li>
+                    <li>电影</li>
+                    <li>NBA</li>
+                    <li>搞笑</li>
+                    <li>音乐</li>
+                    <li>娱乐</li>
+                    <li>动漫</li>
+                    <li>游戏</li>
+                    <li>VIP影院</li>
+                    <li>海外剧</li>
+                    <li>纪录片</li>
+                    <li>新闻</li>
+                    <li>生活</li>
+                    <li>体育</li>
+                </div>
+            </div>
+            <div class="featuredRecommendation">
+                <h5 class="common_h5">特色推荐</h5>
+                <li>自制软件</li>
+                <li>杀毒软件</li>
+            </div>
+            <div class="softDown">
+                <h5>软件下载</h5>
+                <ul class="h5_bottom">
+                    <li>
+                        <svg class="svg_icon svg_icon_iphone" viewBox="0 0 50 50" width="50" height="50">
+                            <path
+                                d="M34 3h-18c-1.657 0-3 1.343-3 3v38c0 1.657 1.343 3 3 3h18c1.657 0 3-1.343 3-3v-38c0-1.657-1.343-3-3-3zm1 38h-20v-32h20v32z">
+                            </path>
+                            <!--[if lte IE 8 ]><image src="//puui.qpic.cn/vupload/0/20190105_svg_icon_iphone.png/0" xlink:href="" /><![endif]-->
+                        </svg>
+                        <h6 class="common_ipone">手机版</h6>
+                    </li>
+                    <li>
+                        <svg class="svg_icon svg_icon_win" viewBox="0 0 50 50" width="50" height="50">
+                            <path
+                                d="M7 23.977l13.282-.176v-14.384l-13.282 2.286v12.274zm15.953-15.02v14.809l20.047-.266v-17.993l-20.047 3.45zm-15.953 29.339l13.282 2.286v-14.383l-13.282-.176v12.273zm15.953 2.746l20.047 3.451v-17.994l-20.047-.265v14.808z">
+                            </path>
+                            <!--[if lte IE 8 ]><image src="//puui.qpic.cn/vupload/0/20190105_svg_icon_win.png/0" xlink:href="" /><![endif]-->
+                        </svg>
+                        <h6 class="common_window">Window版</h6>
+                    </li>
+                    <li>
+                        <svg class="svg_icon svg_icon_mac" viewBox="0 0 50 50" width="50" height="50">
+                            <path
+                                d="M42.705 17.437c-2.28-2.958-5.474-4.671-8.49-4.671-3.99 0-5.675 1.976-8.454 1.976-2.85 0-5.022-1.964-8.478-1.964-3.384 0-6.993 2.143-9.285 5.796-3.218 5.15-2.672 14.85 2.541 23.114 1.864 2.958 4.358 6.275 7.623 6.312h.06c2.838 0 3.681-1.928 7.587-1.952h.06c3.847 0 4.619 1.94 7.445 1.94h.059c3.265-.036 5.889-3.713 7.753-6.659 1.342-2.12 1.84-3.185 2.873-5.581-7.54-2.97-8.751-14.059-1.294-18.311zm-18.155-4.371c2.529 0 5.118-1.581 6.625-3.605 1.461-1.928 2.565-4.658 2.162-7.461-2.375.168-5.141 1.736-6.768 3.784-1.472 1.856-2.683 4.611-2.208 7.282h.189z">
+                            </path>
+                            <!--[if lte IE 8 ]><image src="//puui.qpic.cn/vupload/0/20190105_svg_icon_mac.png/0" xlink:href="" /><![endif]-->
+                        </svg>
+                        <h6 class="common_Mac">Mac版</h6>
+                    </li>
+                    <li>
+                        <svg class="svg_icon svg_icon_ipad" viewBox="0 0 50 50" width="50" height="50">
+                            <path
+                                d="M46 8h-42c-1.657 0-3 1.343-3 3v28c0 1.657 1.343 3 3 3h42c1.657 0 3-1.343 3-3v-28c0-1.657-1.343-3-3-3zm-2 32h-38v-30h38v30z">
+                            </path>
+                            <!--[if lte IE 8 ]><image src="//puui.qpic.cn/vupload/0/20190105_svg_icon_ipad.png/0" xlink:href="" /><![endif]-->
+                        </svg>
+                        <h6 class="common_iPad">iPad版</h6>
+                    </li>
+                    <li>
+                        <svg class="svg_icon svg_icon_tv" viewBox="0 0 50 50" width="50" height="50">
+                            <path
+                                d="M2 11h44v10h2v-11c0-.552-.448-1-1-1h-46c-.552 0-1 .448-1 1v27c0 .552.448 1 1 1h11v2c0 .552.448 1 1 1h22c.552 0 1-.448 1-1v-2h4v-2h-38v-25zm46 12h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-14c0-1.105-.895-2-2-2zm-2 13c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm0-5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2z">
+                            </path>
+                            <!--[if lte IE 8 ]><image src="//puui.qpic.cn/vupload/0/20190105_svg_icon_tv.png/0" xlink:href="" /><![endif]-->
+                        </svg>
+                        <h6 class="common_TV">TV版</h6>
+                    </li>
+                </ul>
+            </div>
+            <div class="server">
+                <h5>服务</h5>
+                <div class="power">
+                    <ul class="power_first">
+                        <li>客服</li>
+                        <li>反馈</li>
+                        <li>侵权投诉</li>
+                        <li>vip采购</li>
+                        <li> 腾讯儿童隐私保护声明</li>
+                        <li>腾讯视频VIP会员服务协议</li>
+                        <li>腾讯视频用户服务协议</li>
+
+                    </ul>
+                    <ul class="power_secod">
+                        <li>腾讯视频第三方SDK目录</li>
+                        <li>腾讯视频第三方信息共享清单</li>
+                        <li>腾讯视频已收集个人信息清单</li>
+                        <li>腾讯视频隐私保护指引</li>
+                        <li>腾讯视频超级影视VIP会员服务协议</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer_center">
+            <div class="footer_center_one">
+                <a href="">粤网文[2017]6138-1456号|</a>
+                <a href="">网络视听许可证1904073号|</a>
+                <a href="">增值电信业务经营许可证：</a>
+                <a href="">粤B2-20090059|</a>
+                <a href="">粤公网安备 44030002000001号</a>
+            </div>
+            <div class="footer_center_two">
+                <a href="">关于腾讯</a>|
+                <a href="">About Tencent</a>
+                <a href="">服务条款</a>|
+                <a href="">广告服务</a>|
+                <a href="">腾讯招聘</a>|
+                <a href="">客服中心</a>|
+                <a href="">网站导航</a>
+            </div>
+            <div class="footer_center_there">
+                <a href="">Copyright © 1998 - 2022 Tencent. </a>
+                <a href="">.All Right Reserved</a>
+            </div>
+            <div class="footer_center_fourth">
+                <a href="">腾讯公司 版权所有</a>
+            </div>
+            <div class="footer_center_five">
+                <img src="./img/7110.webp" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+  <img src="./img/adever.png" alt="">
+
+<script src="./js/index.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+
+</html>

@@ -21,7 +21,6 @@
 
             //    item.style.font = '-size22px';
             //    item.style.font = '-weight22px';
-            //    console.log(  item[index].style.width = '-22px');
         })
     }
     timer = setInterval(loopPicture, interval)
@@ -82,8 +81,7 @@
         allTVDramasmore = more.querySelector('.allTVDramas');
     let allTVDramas = document.querySelectorAll('.allTVDramas');
 
-    // console.log(music);
-    // console.log(allTVDramas);
+
     //鼠标移入事件的方法
     function tvEnter(argu, attr) {
         argu.addEventListener('mouseenter', function (e) {
@@ -91,12 +89,10 @@
             let target = e.target,
                 data_id = target.getAttribute
             allTVDramas.forEach(item => {
-                // console.log(item.data_id);
-                // let data_id = argu.getElementById()
-                // console.log(argu.getElementById);
+
                 if (argu === item.data_id) {
                     item.style.display = 'block';
-                    console.log(item);
+
                 } else {
                     item.style.display = 'none';
                 } hghb
@@ -170,20 +166,20 @@
         [btnPrev, btnNext] = [...mod_hd.querySelectorAll('.Hotspot_switching i')],
         [list_numA, list_numB,] = [...document.querySelectorAll('.list_sum  .list_num')];
     //获取第一个热点视频
-     let i = 0;
+    let i = 0;
     //点击右边箭头我们发生的事情
     btnNext.addEventListener('click', function () {
 
         let list_num = document.querySelector('.list_num');
         list_numA.style.left = `${-1368}px`;
         i++;
-            number = document.querySelector('.number');
-            number.innerHTML = '2/2';
-            btnNext.style.color = '#ccc';
-            btnPrev.style.color = 'black';
+        number = document.querySelector('.number');
+        number.innerHTML = '2/2';
+        btnNext.style.color = '#ccc';
+        btnPrev.style.color = 'black';
 
     })
-    btnPrev.addEventListener('click',function(){
+    btnPrev.addEventListener('click', function () {
         let list_num = document.querySelector('.list_num');
         list_numA.style.left = `${0}px`;
         number.innerHTML = '1/1';
@@ -199,8 +195,7 @@
     let input = document.querySelector('.input'),
         entrance = document.querySelector('.entrance'),
         container = document.querySelector('.container');
-    console.log(input);
-    console.log(entrance);
+
     //   开始写注册事件
     input.addEventListener('click', function () {
         entrance.style.display = 'block';
@@ -242,7 +237,7 @@
     let experience = document.querySelector('.experience'),
         experienceDiv = document.querySelector('.experienceDiv');
     experience.addEventListener('mouseenter', function (e) {
-        console.log(1);
+
         e.stopPropagation();
         experienceDiv.style.display = 'block';
         platformImg.style.opacity = '0';
@@ -262,33 +257,245 @@
         xhr.open('GET', 'data.json', false);
         xhr.onreadystatechange = () => {
             if (xhr.status === 200 && xhr.readyState === 4) {
-             data = JSON.parse(xhr.responseText)    
-             console.log(data);
+                data = JSON.parse(xhr.responseText)
             }
         }
-       xhr.send(null)
+        xhr.send(null)
     }
-   query();
-    
-let list_num = document.querySelector('.list_num');
-   data.forEach(item => {
-    let { id, pic, video, title } = item;
-    let str = ``,
-        list_item = document.createElement('div');
+    query();
+
+    let list_num = document.querySelector('.list_num'),
+        list_sum = document.querySelector('.data_2'),
+        list_car = document.querySelector('.car_num_num'),
+        list_constellation = document.querySelector('.constellation_num_num'),
+        list_mother = document.querySelector('.motherAndBaby_num_num'),
+        list_hostpot = document.querySelector('.hotspot_num_num'),
+        list_music = document.querySelector('.music_num_num'),
+        list_fasion = document.querySelector('.fashion_num_num'),
+        list_education = document.querySelector('.Education_num_num'),
+        list_Britain = document.querySelector('.Britain_num_num'),
+        list_trailer = document.querySelector('.trailer_num_num');
+
+
+    data.data1.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
         list_item.className = 'list_item';
-    str += ` <a href=""
+        str += ` <a href=""
           target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
           <img src="${pic}" alt="" class="firstImg" alt="${title}">
           <div class="videoTime">${video}</div>
           <span class="play"></span>
       </a>`
-    str += `<div class="title_text">
+        str += `<div class="title_text">
          ${title}
      </div> `
-     list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
-     list_num.appendChild(list_item);
-})
-}) ();
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_num.appendChild(list_item);
+    })
+
+    data.data2.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+          target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+          <img src="${pic}" alt="" class="firstImg" alt="${title}">
+          <div class="videoTime">${video}</div>
+          <span class="play"></span>
+      </a>`
+        str += `<div class="title_text">
+         ${title}
+     </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_sum.appendChild(list_item);
+    });
+
+    data.data3.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+          target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+          <img src="${pic}" alt="" class="firstImg" alt="${title}">
+          <div class="videoTime">${video}</div>
+          <span class="play"></span>
+      </a>`
+        str += `<div class="title_text">
+         ${title}
+     </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_car.appendChild(list_item);
+    })
+    data.constellation.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+          target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+          <img src="${pic}" alt="" class="firstImg" alt="${title}">
+          <div class="videoTime">${video}</div>
+          <span class="play"></span>
+      </a>`
+        str += `<div class="title_text">
+         ${title}
+     </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_constellation.appendChild(list_item);
+    })
+    data.MotherAndBaby.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+          target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+          <img src="${pic}" alt="" class="firstImg" alt="${title}">
+          <div class="videoTime">${video}</div>
+          <span class="play"></span>
+      </a>`
+        str += `<div class="title_text">
+         ${title}
+     </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_mother.appendChild(list_item);
+    })
+    data.hostpot.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+          target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+          <img src="${pic}" alt="" class="firstImg" alt="${title}">
+          <div class="videoTime">${video}</div>
+          <span class="play"></span>
+      </a>`
+        str += `<div class="title_text">
+         ${title}
+     </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_hostpot.appendChild(list_item);
+    })
+    data.music.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+          target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+          <img src="${pic}" alt="" class="firstImg" alt="${title}">
+          <div class="videoTime">${video}</div>
+          <span class="play"></span>
+      </a>`
+        str += `<div class="title_text">
+         ${title}
+     </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_music.appendChild(list_item);
+    })
+    data.fashion.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_fasion.appendChild(list_item);
+    })
+    data.education.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_education.appendChild(list_item);
+    })
+    data.music.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_music.appendChild(list_item);
+    })
+    data.Britain.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_Britain.appendChild(list_item);
+    })
+    data.trailer.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_trailer.appendChild(list_item);
+    })
+
+})();
 
 
 
