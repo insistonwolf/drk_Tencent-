@@ -1774,12 +1774,22 @@ section .containerRight .nav-barSecond li .title-1 {
   height: 163px;
   background-color: #111;
 }
+.first_advertise {
+  width: 1200px;
+  height: 270px;
+  margin: auto;
+  margin-top: 45px;
+}
+.first_advertise img {
+  width: 1200px;
+  height: 270px;
+}
 .mod_trailer {
   display: flex;
   justify-content: space-between;
   width: 1200px;
   height: 60px;
-  margin: 335px auto 10px auto;
+  margin: 35px auto 10px auto;
 }
 .mod_trailer .title {
   display: flex;
