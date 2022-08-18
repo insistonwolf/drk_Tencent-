@@ -1744,35 +1744,32 @@ section .containerRight .nav-barSecond li .title-1 {
   height: 366px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
 }
 .video_vip .play {
-  width: 591px;
+  margin-right: 25px;
+  width: 571px;
   height: 366px;
-  background-color: #ff1459;
+  background-color: black;
+  position: relative;
+}
+.video_vip .play video {
+  width: 566px;
+  height: 366px;
+  position: absolute;
+}
+.video_vip .playCon {
+  width: 609px;
+  height: 366px;
+  background-color: #fff;
 }
 .video_vip .playCon .money {
   width: 609px;
   height: 185px;
-  background: #ff1459;
-  display: flex;
-  justify-content: flex-start;
-}
-.video_vip .playCon .money li {
-  width: 85px;
-  height: 163px;
-  background-color: #111;
 }
 .video_vip .playCon .fill {
   width: 609px;
-  height: 185px;
-  background-color: #ffb821;
-  display: flex;
-  justify-content: flex-start;
-}
-.video_vip .playCon .fill li {
-  width: 85px;
-  height: 163px;
-  background-color: #111;
+  height: 180px;
 }
 .first_advertise {
   width: 1200px;

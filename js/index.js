@@ -274,7 +274,9 @@
         list_fasion = document.querySelector('.fashion_num_num'),
         list_education = document.querySelector('.Education_num_num'),
         list_Britain = document.querySelector('.Britain_num_num'),
-        list_trailer = document.querySelector('.trailer_num_num');
+        list_trailer = document.querySelector('.trailer_num_num'),
+        list_video = document.querySelector('.video_num_num'),
+        list_video2 = document.querySelector('.video2_num_num');
 
 
     data.data1.forEach(item => {
@@ -476,6 +478,7 @@
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_Britain.appendChild(list_item);
     })
+  
     data.trailer.forEach(item => {
         let { id, pic, video, title } = item;
         let str = ``,
@@ -494,7 +497,42 @@
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_trailer.appendChild(list_item);
     })
+    data.video.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
 
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_video.appendChild(list_item);
+    })
+    data.video2.forEach(item => {
+        let { id, pic, video, title } = item;
+        let str = ``,
+            list_item = document.createElement('div');
+        list_item.className = 'list_item';
+
+        str += ` <a href=""
+              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+              <img src="${pic}" alt="" class="firstImg" alt="${title}">
+              <div class="videoTime">${video}</div>
+              <span class="play"></span>
+          </a>`
+        str += `<div class="title_text">
+             ${title}
+         </div> `
+        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+        list_video2.appendChild(list_item);
+    })
 })();
 
 
