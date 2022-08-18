@@ -1,5 +1,20 @@
 (function () {
 
+    //音乐的播放
+
+    window.onload = function () {
+        setInterval(toggleSound, 10);
+    }
+    console.time('输出时间')
+    function toggleSound() {
+        var music = document.getElementById("vd");//获取ID  
+
+        if (music.paused) { //判读是否播放  
+            music.paused = false;
+            music.play(); //没有就播放 
+        }
+    }
+    console.timeEnd('输出时间')
     //1实现进入来进行切换图片
 
     let container = document.querySelector('.container'), //主内容框
@@ -81,24 +96,6 @@
         allTVDramasmore = more.querySelector('.allTVDramas');
     let allTVDramas = document.querySelectorAll('.allTVDramas');
 
-
-    //鼠标移入事件的方法
-    // function tvEnter(argu, attr) {
-    //     argu.addEventListener('mouseenter', function (e) {
-
-    //         let target = e.target,
-    //             data_id = target.getAttribute
-    //         allTVDramas.forEach(item => {
-
-    //             if (argu === item.data_id) {
-    //                 item.style.display = 'block';
-
-    //             } else {
-    //                 item.style.display = 'none';
-    //             } hghb
-    //         })
-    //     })
-    // }
     function tvEnter(argu, attr) {
         argu.addEventListener('mouseenter', function () {
             attr.style.display = 'block'
@@ -117,80 +114,171 @@
         })
 
     }
-    
+
     //给电视剧来写入鼠标的移入事件
     tvEnter(tyPlay, allTVDramasTv);
-    boxEnter(main_nav_0_top,allTVDramasTv);
+    boxEnter(main_nav_0_top, allTVDramasTv);
     tyLeave(allTVDramasTv)
     // yLeave(tyPlay,allTVDramasTv)
     //给电视剧来写入鼠标的移入事件
     tvEnter(flim, allTVDramasFilm);
-    boxEnter(main_nav_0_bottom,allTVDramasFilm);
+    boxEnter(main_nav_0_bottom, allTVDramasFilm);
     tyLeave(allTVDramasFilm)
     //综艺来写入事件
     tvEnter(Variety, allTVDramasVariety);
-    boxEnter(main_nav_1_top,allTVDramasVariety);
+    boxEnter(main_nav_1_top, allTVDramasVariety);
     tyLeave(allTVDramasVariety)
     //来给动漫写入事件
     tvEnter(Comic, allTVDramasComic);
-    boxEnter(main_nav_1_bottom,allTVDramasComic);
+    boxEnter(main_nav_1_bottom, allTVDramasComic);
     tyLeave(allTVDramasComic)
     //来给少儿写入事件
     tvEnter(juvenile, allTVDramasJuvenile);
-    boxEnter(main_nav_2_top,allTVDramasJuvenile);
+    boxEnter(main_nav_2_top, allTVDramasJuvenile);
     tyLeave(allTVDramasJuvenile)
     //来给纪录片写入事件
     tvEnter(Documentary, allTVDramasDocumentary);
-    boxEnter(main_nav_2_bottom,allTVDramasDocumentary);
+    boxEnter(main_nav_2_bottom, allTVDramasDocumentary);
     tyLeave(allTVDramasDocumentary)
     //来给音乐写入事件
     tvEnter(music, allTVDramasMusic);
+    boxEnter(music, allTVDramasMusic);
     tyLeave(allTVDramasMusic)
     //来给体育写入事件
     tvEnter(sports, allTVDramasSports);
+    boxEnter(sports, allTVDramasSports);
     tyLeave(allTVDramasSports)
     //来给育儿写入事件
     tvEnter(education, allTVDramasEducation);
+    boxEnter(education, allTVDramasEducation);
     tyLeave(allTVDramasEducation)
     //来给游戏写入事件
     tvEnter(game, allTVDramasGame);
+    boxEnter(game, allTVDramasGame);
     tyLeave(allTVDramasGame)
     //来给知识写入事件
     tvEnter(knowledge, allTVDramasKnowledge);
+    boxEnter(knowledge, allTVDramasKnowledge);
     tyLeave(allTVDramasKnowledge)
     //来给技术写入事件
     tvEnter(technology, allTVDramastechnology);
+    boxEnter(technology, allTVDramastechnology);
     tyLeave(allTVDramastechnology)
     //来给更多写入事件
     tvEnter(more, allTVDramasmore);
-    tyLeave(allTVDramasmore)
+    boxEnter(more, allTVDramasmore);
+    tyLeave(allTVDramasmore);
+    //历史图标
+
     //鼠标的点击事件来进行切换视频
     let mod_hd = document.querySelector('.mod_hd'),
-        number,
+        number = document.querySelector('.number'),
         [btnPrev, btnNext] = [...mod_hd.querySelectorAll('.Hotspot_switching i')],
-        [list_numA, list_numB,] = [...document.querySelectorAll('.list_sum  .list_num')];
+        [list_numA,list_numB] = [...document.querySelectorAll('.list_sum  .list_num')];
     //获取第一个热点视频
-    let i = 0;
+
     //点击右边箭头我们发生的事情
-    btnNext.addEventListener('click', function () {
+    // btnNext.addEventListener('click', function () {
+    //     list_numA.style.left = `${-1368}px`;
+    //     number = document.querySelector('.number').innerHTML = '2/2';
+    //     btnNext.style.color = '#ccc';
+    //     btnPrev.style.color = 'black';
 
-        let list_num = document.querySelector('.list_num');
-        list_numA.style.left = `${-1368}px`;
-        i++;
-        number = document.querySelector('.number');
-        number.innerHTML = '2/2';
-        btnNext.style.color = '#ccc';
-        btnPrev.style.color = 'black';
+    // })
+    // btnPrev.addEventListener('click', function () {
+    //     list_numA.style.left = `${0}px`;
+    //     number.innerHTML = '1/1';
+    //     btnPrev.style.color = '#ccc';
+    //     btnNext.style.color = 'black';
+    // })
 
-    })
-    btnPrev.addEventListener('click', function () {
-        let list_num = document.querySelector('.list_num');
-        list_numA.style.left = `${0}px`;
-        number.innerHTML = '1/1';
-        btnPrev.style.color = '#ccc';
-        btnNext.style.color = 'black';
-    })
+    const nextClick = function nextClick(attr, number, next, prev) {
+        next.addEventListener('click', function () {
+            attr.style.left = `${-1368}px`;
+            number.innerHTML = '2/2';
+            next.style.color = 'black';
+            prev.style.color = 'black';
+        })
+    }
+    const prevClick = function nextClick(attr, number, next, prev) {
+        prev.addEventListener('click',function(){
+            attr.style.left = `${0}px`;
+            number.innerHTML = '1/2';
+            prev.style.color = '#ccc';
+            next.style.color = 'black';
+        })
+    }
 
+    nextClick(list_numA, number, btnNext, btnPrev);
+    prevClick(list_numA, number, btnNext, btnPrev);
+
+     //知识区来进行左右切换
+    let mod_hd_kn = document.querySelector('.mod_hd_kn'),
+    numberKn = document.querySelector('.numberKn'),
+    [btnPrevKn, btnNextKn] = [...mod_hd_kn.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_kn,list_numB_kn] = [...document.querySelectorAll('.list_sum  .list_numA_kn')];
+    nextClick(list_numA_kn, numberKn, btnNextKn, btnPrevKn);
+    prevClick(list_numA_kn, numberKn, btnNextKn, btnPrevKn);
+     //花絮来进行左右切换
+    let mod_edu = document.querySelector('.mod_edu'),
+    number_edu = document.querySelector('.number_edu'),
+    [btnPrev_edu, btnNext_edu] = [...mod_edu.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_edu,list_numB_edu] = [...document.querySelectorAll('.list_sum  .Education_num_num')];
+    nextClick(list_numA_edu, number_edu, btnNext_edu, btnPrev_edu);
+    prevClick(list_numA_edu, number_edu, btnNext_edu, btnPrev_edu);
+   
+     //教育精选来进行左右切换
+    let mod_trailer = document.querySelector('.mod_trailer'),
+    number_trailer = document.querySelector('.number_trailer'),
+    [btnPrev_trailer, btnNext_trailer] = [...mod_trailer.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_trailer,list_numB_trailer] = [...document.querySelectorAll('.list_sum  .trailer_num_num')];
+    nextClick(list_numA_trailer, number_trailer, btnNext_trailer, btnPrev_trailer);
+    prevClick(list_numA_trailer, number_trailer, btnNext_trailer, btnPrev_trailer);
+     //时尚精选来进行左右切换
+    let mod_hd_fashionPopularity = document.querySelector('.mod_hd_fashionPopularity'),
+    number_fashion = document.querySelector('.number_fashion'),
+    [btnPrev_fashion, btnNext_fashion] = [...mod_hd_fashionPopularity.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_fashion,list_numB_fashion] = [...document.querySelectorAll('.list_sum  .trailer_num_num')];
+    nextClick(list_numA_fashion, number_fashion, btnNext_fashion, btnPrev_fashion);
+    prevClick(list_numA_fashion, number_fashion, btnNext_fashion, btnPrev_fashion);
+   
+     //音乐精选来进行左右切换
+    let mod_hd_music = document.querySelector('.mod_hd_music'),
+    number_mic = document.querySelector('.number_mic'),
+    [btnPrev_mic, btnNext_mic] = [...mod_hd_music.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_mic,list_numB_mic] = [...document.querySelectorAll('.list_sum  .music_num_num')];
+    nextClick(list_numA_mic, number_mic,  btnNext_mic, btnPrev_mic);
+    prevClick(list_numA_mic,number_mic ,btnNext_mic, btnPrev_mic);
+
+     //娱乐精选来进行左右切换
+    let mod_hd_hotspot = document.querySelector('.mod_hd_hotspot'),
+    number_hot = document.querySelector('.number_hot'),
+    [btnPrev_hot, btnNext_hot] = [...mod_hd_hotspot.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_hot,list_numB_hot] = [...document.querySelectorAll('.list_sum  .hotspot_num_num')];
+    nextClick(list_numA_hot, number_hot,  btnNext_hot, btnPrev_hot);
+    prevClick(list_numA_hot,number_hot ,btnNext_hot, btnPrev_hot);
+     //母婴精选来进行左右切换
+    let mod_hd_motherAndBaby = document.querySelector('.mod_hd_motherAndBaby'),
+    number_mother = document.querySelector('.number_mother'),
+    [btnPrev_mother, btnNext_mother] = [...mod_hd_motherAndBaby.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_mother,list_numB_mother] = [...document.querySelectorAll('.list_sum  .motherAndBaby_num_num')];
+    nextClick(list_numA_mother, number_mother,  btnNext_mother, btnPrev_mother);
+    prevClick(list_numA_mother,number_mother ,btnNext_mother, btnPrev_mother);
+     //星座精选来进行左右切换
+    let mod_hd_constellation = document.querySelector('.mod_hd_constellation'),
+    number_constellation = document.querySelector('.number_constellation'),
+    [btnPrev_constellation, btnNext_constellation] = [...mod_hd_constellation.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_constellation,list_numB_constellation] = [...document.querySelectorAll('.list_sum  .constellation_num_num')];
+    nextClick(list_numA_constellation, number_constellation,  btnNext_constellation, btnPrev_constellation);
+    prevClick(list_numA_constellation,number_constellation ,btnNext_constellation, btnPrev_constellation);
+     //汽车精选来进行左右切换
+    let mod_hd_car = document.querySelector('.mod_hd_car'),
+    number_car = document.querySelector('.number_car'),
+    [btnPrev_car, btnNext_car] = [...mod_hd_car.querySelectorAll('.Hotspot_switching i')],
+    [list_numA_car,list_numB_car] = [...document.querySelectorAll('.list_sum  .car_num_num')];
+    nextClick(list_numA_car, number_car,  btnNext_car, btnPrev_car);
+    prevClick(list_numA_car,number_car ,btnNext_car, btnPrev_car);
+   
 })();
 
 /* 快速导航的的操作 */
@@ -212,7 +300,10 @@
         historyDiv = document.querySelector('.historyDiv');
     history.addEventListener('mouseenter', function () {
         historyDiv.style.display = 'block';
-    })
+    });
+    history.addEventListener('mouseleave', function () {
+        historyDiv.style.display = 'none';
+    });
     historyDiv.addEventListener('mouseleave', function () {
         historyDiv.style.display = 'none';
     })
@@ -246,6 +337,9 @@
         experienceDiv.style.display = 'block';
         platformImg.style.opacity = '0';
 
+    })
+    experience.addEventListener('mouseleave', function () {
+        experienceDiv.style.display = 'none';
     })
     experienceDiv.addEventListener('mouseleave', function () {
         experienceDiv.style.display = 'none';

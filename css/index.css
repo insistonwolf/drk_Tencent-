@@ -257,7 +257,7 @@
 }
 .topColor .leftbin .platform .experience {
   width: 26px;
-  height: 26px;
+  height: 100px;
 }
 .topColor .leftbin .platform .experience {
   position: absolute;
@@ -308,7 +308,7 @@ section .containerRight .historyDiv {
   position: absolute;
   width: 290px;
   height: 431px;
-  top: -15px;
+  top: -10px;
   left: 0;
   z-index: 10;
   color: #000028;
@@ -1129,8 +1129,8 @@ section .containerRight .nav-barSecond li .title-1 {
 .main_nav-3 .leftNavigation li:nth-of-type(3) .allTVDramas {
   z-index: 10;
   position: absolute;
-  left: -220px;
-  top: -280px;
+  left: -210px;
+  top: -258px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -1177,7 +1177,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: -130px;
-  top: -280px;
+  top: -260px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -1224,7 +1224,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: -95px;
-  top: -195px;
+  top: -170px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -1285,7 +1285,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: -320px;
-  top: -280px;
+  top: -259px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -1315,7 +1315,7 @@ section .containerRight .nav-barSecond li .title-1 {
   position: absolute;
   top: auto;
   bottom: -14px;
-  left: 335px;
+  left: 350px;
   width: 0;
   height: 0;
   overflow: visible;
@@ -1332,7 +1332,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: -315px;
-  top: -280px;
+  top: -257px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -1362,7 +1362,7 @@ section .containerRight .nav-barSecond li .title-1 {
   position: absolute;
   top: auto;
   bottom: -14px;
-  left: 335px;
+  left: 350px;
   width: 0;
   height: 0;
   overflow: visible;
@@ -1379,7 +1379,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: -309px;
-  top: -280px;
+  top: -257px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -1429,7 +1429,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: -329px;
-  top: -189px;
+  top: -169px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
