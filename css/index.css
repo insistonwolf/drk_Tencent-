@@ -563,7 +563,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: 0;
-  top: -280px;
+  top: -265px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -649,13 +649,13 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 16px;
   background-color: #ccc;
-  z-index: 23;
+  z-index: 2;
 }
 .s-second .main_nav-0-bottom .allTVDramas {
   z-index: 10;
   position: absolute;
-  left: 0;
-  top: -280px;
+  left: 5px;
+  top: -272px;
   width: 360px;
   padding: 13px 0 10px 30px;
   border-radius: 4px;
@@ -685,7 +685,7 @@ section .containerRight .nav-barSecond li .title-1 {
   position: absolute;
   top: auto;
   bottom: -14px;
-  left: 60px;
+  left: 50px;
   width: 0;
   height: 0;
   overflow: visible;
@@ -758,7 +758,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: 0;
-  top: -280px;
+  top: -265px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -850,7 +850,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: 0;
-  top: -280px;
+  top: -265px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -941,7 +941,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: 0;
-  top: -280px;
+  top: -265px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;
@@ -971,7 +971,7 @@ section .containerRight .nav-barSecond li .title-1 {
   position: absolute;
   top: auto;
   bottom: -14px;
-  left: 60px;
+  left: 45px;
   width: 0;
   height: 0;
   overflow: visible;
@@ -1029,7 +1029,7 @@ section .containerRight .nav-barSecond li .title-1 {
   z-index: 10;
   position: absolute;
   left: 0;
-  top: -280px;
+  top: -265px;
   width: 360px;
   padding: 13px 0 0px 30px;
   border-radius: 4px;

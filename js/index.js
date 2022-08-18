@@ -83,61 +83,65 @@
 
 
     //鼠标移入事件的方法
-    function tvEnter(argu, attr) {
-        argu.addEventListener('mouseenter', function (e) {
+    // function tvEnter(argu, attr) {
+    //     argu.addEventListener('mouseenter', function (e) {
 
-            let target = e.target,
-                data_id = target.getAttribute
-            allTVDramas.forEach(item => {
+    //         let target = e.target,
+    //             data_id = target.getAttribute
+    //         allTVDramas.forEach(item => {
 
-                if (argu === item.data_id) {
-                    item.style.display = 'block';
+    //             if (argu === item.data_id) {
+    //                 item.style.display = 'block';
 
-                } else {
-                    item.style.display = 'none';
-                } hghb
-            })
-        })
-    }
+    //             } else {
+    //                 item.style.display = 'none';
+    //             } hghb
+    //         })
+    //     })
+    // }
     function tvEnter(argu, attr) {
         argu.addEventListener('mouseenter', function () {
             attr.style.display = 'block'
         })
     }
+    //监听盒子
+    function boxEnter(argu, attr) {
+        argu.addEventListener('mouseleave', function () {
+            attr.style.display = 'none'
+        })
+    }
     //事件移除方法
     function tyLeave(attr) {
-
-        // argu.addEventListener('mouseleave', function (e) {
-        //     let target = e.target,
-        //         targetTag = target.tagName;
-        //         if (targetTag === "A") {
-        //             attr.style.display = 'none';
-        //         }
-        // })
         attr.addEventListener('mouseleave', function () {
             attr.style.display = 'none'
         })
 
     }
-
+    
     //给电视剧来写入鼠标的移入事件
     tvEnter(tyPlay, allTVDramasTv);
-    tyLeave(tyPlay, allTVDramasTv)
+    boxEnter(main_nav_0_top,allTVDramasTv);
+    tyLeave(allTVDramasTv)
     // yLeave(tyPlay,allTVDramasTv)
     //给电视剧来写入鼠标的移入事件
     tvEnter(flim, allTVDramasFilm);
+    boxEnter(main_nav_0_bottom,allTVDramasFilm);
     tyLeave(allTVDramasFilm)
     //综艺来写入事件
     tvEnter(Variety, allTVDramasVariety);
+    boxEnter(main_nav_1_top,allTVDramasVariety);
     tyLeave(allTVDramasVariety)
     //来给动漫写入事件
     tvEnter(Comic, allTVDramasComic);
+    boxEnter(main_nav_1_bottom,allTVDramasComic);
     tyLeave(allTVDramasComic)
     //来给少儿写入事件
     tvEnter(juvenile, allTVDramasJuvenile);
+    boxEnter(main_nav_2_top,allTVDramasJuvenile);
     tyLeave(allTVDramasJuvenile)
     //来给纪录片写入事件
     tvEnter(Documentary, allTVDramasDocumentary);
+    boxEnter(main_nav_2_bottom,allTVDramasDocumentary);
     tyLeave(allTVDramasDocumentary)
     //来给音乐写入事件
     tvEnter(music, allTVDramasMusic);
@@ -478,7 +482,7 @@
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_Britain.appendChild(list_item);
     })
-  
+
     data.trailer.forEach(item => {
         let { id, pic, video, title } = item;
         let str = ``,
