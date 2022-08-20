@@ -376,7 +376,7 @@ section .containerRight .login {
   position: absolute;
   width: 370px;
   height: 300px;
-  top: -35px;
+  top: -24px;
   left: -100px;
   z-index: 10;
   color: #000028;

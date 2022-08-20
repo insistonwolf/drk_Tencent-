@@ -306,11 +306,14 @@
         his_his.addEventListener('mouseenter', function () {
         historyDiv.style.display = 'block';
     });
-    // history.addEventListener('mouseleave', function () {
-    //     historyDiv.style.display = 'none';
-    // });
+    history.addEventListener('mouseleave', function () {
+        historyDiv.style.display = 'none';
+    });
     historyDiv.addEventListener('mouseleave', function () {
         historyDiv.style.display = 'none';
+    })
+    historyDiv.addEventListener('mouseenter', function () {
+        historyDiv.style.display = 'block';
     })
      console.log(history);
     /* 导航栏中我们中的体验的进入和移除的事件 */
@@ -357,11 +360,14 @@
         me.addEventListener('mouseenter',function(){
           login.style.display = 'block'
         })
-        // me.addEventListener('mouseleave',function(){
-        //   login.style.display = 'none'
-        // })
+        me.addEventListener('mouseleave',function(){
+          login.style.display = 'none'
+        })
         login.addEventListener('mouseleave',function(){
           login.style.display = 'none'
+        })
+        login.addEventListener('mouseenter',function(){
+          login.style.display = 'block'
         })
 })();
 
