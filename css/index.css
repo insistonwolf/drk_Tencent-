@@ -41,6 +41,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  background: #e3b54c;
 }
 .topColor .topCenter .topSerach .entrance {
   position: absolute;
@@ -308,7 +309,7 @@ section .containerRight .historyDiv {
   position: absolute;
   width: 290px;
   height: 431px;
-  top: -10px;
+  top: -20px;
   left: 0;
   z-index: 10;
   color: #000028;
@@ -370,6 +371,103 @@ section .containerRight .experienceDiv ul li:nth-of-type(4) {
   border-radius: 15px;
   text-align: center;
   line-height: 30px;
+}
+section .containerRight .login {
+  position: absolute;
+  width: 370px;
+  height: 300px;
+  top: -35px;
+  left: -100px;
+  z-index: 10;
+  color: #000028;
+  background-color: #fff;
+  font-size: 16px;
+  z-index: 23;
+  border-radius: 5px;
+  text-indent: 10px;
+  overflow: hidden;
+  display: none;
+}
+section .containerRight .login .login_vip {
+  width: 370px;
+  height: 90px;
+  line-height: 30px;
+  background-image: url(../img/pop_user_bg@2x.png);
+}
+section .containerRight .login .login_vip li:first-of-type {
+  width: 370px;
+  height: 45px;
+  font-size: 16px;
+}
+section .containerRight .login .login_vip li:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+section .containerRight .login .login_vip li:nth-of-type(2) h5 {
+  font-weight: 500;
+}
+section .containerRight .login .login_vip li:nth-of-type(2) button {
+  width: 76px;
+  height: 26px;
+  background-color: #e3b54c;
+  border-radius: 20px;
+  color: white;
+  margin-right: 20px;
+}
+section .containerRight .login .login_bottom {
+  width: 370px;
+  height: 210px;
+}
+section .containerRight .login .login_bottom .login_bottom_dl {
+  width: 370px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li {
+  width: 120px;
+  height: 120px;
+  color: #111;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li:nth-of-type(2) h5 {
+  width: 100px;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li:nth-of-type(4) {
+  position: relative;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li:nth-of-type(4) h5 {
+  width: 100px;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li:nth-of-type(4)::after {
+  content: "用客户端看抢VIP";
+  position: absolute;
+  left: -30px;
+  bottom: 8px;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li img {
+  margin-top: 20px;
+  width: 58;
+  height: 58px;
+}
+section .containerRight .login .login_bottom .login_bottom_dl li h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+section .containerRight .login .login_bottom .quick_button .quick {
+  width: 169px;
+  height: 33px;
+  margin: 23px 10px 0 85px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ffb821 0, #ff5c38 45%, #ff1459);
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
 }
 section .containerRight .nav-barFirst li {
   width: 275px;
@@ -557,7 +655,7 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 16px;
   background-color: #ccc;
-  z-index: 23;
+  z-index: 1;
 }
 .s-second .main_nav-0 .main_nav-0-top .allTVDramas {
   z-index: 10;
@@ -649,7 +747,7 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 16px;
   background-color: #ccc;
-  z-index: 2;
+  z-index: 1;
 }
 .s-second .main_nav-0-bottom .allTVDramas {
   z-index: 10;
@@ -741,6 +839,9 @@ section .containerRight .nav-barSecond li .title-1 {
   color: #111;
   position: relative;
 }
+.main_nav-1 .main_nav-1-top .TV-play:hover {
+  color: #ff5c38;
+}
 .main_nav-1 .main_nav-1-top .TV-play::after {
   content: '';
   position: absolute;
@@ -749,7 +850,7 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 16px;
   background-color: #ccc;
-  z-index: 23;
+  z-index: 2;
 }
 .main_nav-1 .main_nav-1-top .TV-play:hover + .allTVDramas {
   display: block;
@@ -833,6 +934,9 @@ section .containerRight .nav-barSecond li .title-1 {
   margin-right: 20px;
   color: #111;
 }
+.main_nav-1 .main_nav-1-bottom .TV-play:hover {
+  color: #ff5c38;
+}
 .main_nav-1 .main_nav-1-bottom .TV-play::after {
   content: '';
   position: absolute;
@@ -841,7 +945,7 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 16px;
   background-color: #ccc;
-  z-index: 23;
+  z-index: 2;
 }
 .main_nav-1 .main_nav-1-bottom .TV-play:hover + .allTVDramas {
   display: block;
@@ -927,6 +1031,9 @@ section .containerRight .nav-barSecond li .title-1 {
   color: #111;
   position: relative;
 }
+.main_nav-2 .main_nav-2-top .TV-play:hover {
+  color: #ff5c38;
+}
 .main_nav-2 .main_nav-2-top .TV-play::after {
   content: '';
   position: absolute;
@@ -935,7 +1042,7 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 18px;
   background-color: #ccc;
-  z-index: 23;
+  z-index: 2;
 }
 .main_nav-2 .main_nav-2-top .allTVDramas {
   z-index: 10;
@@ -1015,6 +1122,9 @@ section .containerRight .nav-barSecond li .title-1 {
   font-weight: 600;
   color: #111;
 }
+.main_nav-2 .main_nav-2-bottom .TV-play:hover {
+  color: #ff5c38;
+}
 .main_nav-2 .main_nav-2-bottom .TV-play::after {
   content: '';
   position: absolute;
@@ -1023,7 +1133,7 @@ section .containerRight .nav-barSecond li .title-1 {
   width: 1px;
   height: 18px;
   background-color: #ccc;
-  z-index: 23;
+  z-index: 2;
 }
 .main_nav-2 .main_nav-2-bottom .allTVDramas {
   z-index: 10;
@@ -1107,7 +1217,7 @@ section .containerRight .nav-barSecond li .title-1 {
   background-color: #eee;
   font-weight: 700;
   box-shadow: #f8f8f8;
-  z-index: 23;
+  z-index: 2;
 }
 .main_nav-3 .leftNavigation li {
   width: 52.83px;
@@ -1122,9 +1232,6 @@ section .containerRight .nav-barSecond li .title-1 {
 }
 .main_nav-3 .leftNavigation li:nth-of-type(2):hover {
   color: #ff5c38;
-}
-.main_nav-3 .leftNavigation li:nth-of-type(3):hover .allTVDramas {
-  display: block;
 }
 .main_nav-3 .leftNavigation li:nth-of-type(3) .allTVDramas {
   z-index: 10;
@@ -1170,9 +1277,6 @@ section .containerRight .nav-barSecond li .title-1 {
   content: "";
   pointer-events: none;
 }
-.main_nav-3 .leftNavigation li:nth-of-type(4):hover .allTVDramas {
-  display: block;
-}
 .main_nav-3 .leftNavigation li:nth-of-type(4) .allTVDramas {
   z-index: 10;
   position: absolute;
@@ -1216,9 +1320,6 @@ section .containerRight .nav-barSecond li .title-1 {
   font-size: 0;
   content: "";
   pointer-events: none;
-}
-.main_nav-3 .leftNavigation li:nth-of-type(5):hover .allTVDramas {
-  display: block;
 }
 .main_nav-3 .leftNavigation li:nth-of-type(5) .allTVDramas {
   z-index: 10;
@@ -1325,8 +1426,8 @@ section .containerRight .nav-barSecond li .title-1 {
   content: "";
   pointer-events: none;
 }
-.main_nav-3 .rightNavigation li:nth-of-type(2):hover .allTVDramas {
-  display: block;
+.main_nav-3 .rightNavigation li:nth-of-type(3):hover {
+  color: #ff5c38;
 }
 .main_nav-3 .rightNavigation li:nth-of-type(2) .allTVDramas {
   z-index: 10;
@@ -1372,9 +1473,6 @@ section .containerRight .nav-barSecond li .title-1 {
   content: "";
   pointer-events: none;
 }
-.main_nav-3 .rightNavigation li:nth-of-type(4):hover .allTVDramas {
-  display: block;
-}
 .main_nav-3 .rightNavigation li:nth-of-type(4) .allTVDramas {
   z-index: 10;
   position: absolute;
@@ -1418,9 +1516,6 @@ section .containerRight .nav-barSecond li .title-1 {
   font-size: 0;
   content: "";
   pointer-events: none;
-}
-.main_nav-3 .rightNavigation li:nth-of-type(5):hover .allTVDramas {
-  display: block;
 }
 .main_nav-3 .rightNavigation li:nth-of-type(5) {
   color: #ff5c38;
@@ -2330,6 +2425,9 @@ section .containerRight .nav-barSecond li .title-1 {
   font-size: 12px;
   color: blank;
 }
+.footer .footer_top .top_one .newTv li:hover {
+  color: #ff8038;
+}
 .footer .footer_top .top_one .newTv li:nth-of-type(10) {
   font-size: 12px;
 }
@@ -2351,6 +2449,9 @@ section .containerRight .nav-barSecond li .title-1 {
   list-style: none;
   margin-bottom: 15px;
   color: black;
+}
+.footer .footer_top .featuredRecommendation li:hover {
+  color: #ff8038;
 }
 .footer .footer_top .softDown {
   width: 400px;
@@ -2375,6 +2476,9 @@ section .containerRight .nav-barSecond li .title-1 {
 .footer .footer_top .softDown .h5_bottom li {
   width: 80px;
   height: 90px;
+}
+.footer .footer_top .softDown .h5_bottom li:hover {
+  color: #ff8038;
 }
 .footer .footer_top .softDown .h5_bottom li:first-of-type .common_ipone {
   margin: 13px auto 0 19px;
@@ -2427,12 +2531,18 @@ section .containerRight .nav-barSecond li .title-1 {
 .footer .footer_top .server .power .power_first li {
   margin-bottom: 10px;
 }
+.footer .footer_top .server .power .power_first li:hover {
+  color: #ff8038;
+}
 .footer .footer_top .server .power .power_secod {
   width: 180px;
   height: 160px;
 }
 .footer .footer_top .server .power .power_secod li {
   margin-bottom: 20px;
+}
+.footer .footer_top .server .power .power_secod li:hover {
+  color: #ff8038;
 }
 .footer .footer_center {
   width: 1519.2px;
@@ -2448,6 +2558,9 @@ section .containerRight .nav-barSecond li .title-1 {
 .footer .footer_center .footer_center_one a {
   color: #666;
 }
+.footer .footer_center .footer_center_one a:hover {
+  color: #ff8038;
+}
 .footer .footer_center .footer_center_two {
   width: 700px;
   height: 30px;
@@ -2455,6 +2568,9 @@ section .containerRight .nav-barSecond li .title-1 {
 }
 .footer .footer_center .footer_center_two a {
   color: #666;
+}
+.footer .footer_center .footer_center_two a:hover {
+  color: #ff8038;
 }
 .footer .footer_center .footer_center_there {
   width: 500px;
@@ -2464,6 +2580,9 @@ section .containerRight .nav-barSecond li .title-1 {
 .footer .footer_center .footer_center_there a {
   color: #666;
 }
+.footer .footer_center .footer_center_there a:hover {
+  color: #ff8038;
+}
 .footer .footer_center .footer_center_fourth {
   width: 1519.2px;
   height: 30px;
@@ -2471,6 +2590,9 @@ section .containerRight .nav-barSecond li .title-1 {
 }
 .footer .footer_center .footer_center_fourth a {
   color: #666;
+}
+.footer .footer_center .footer_center_fourth a:hover {
+  color: #ff8038;
 }
 .footer .footer_center_five {
   width: 112px;

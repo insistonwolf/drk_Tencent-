@@ -53,6 +53,7 @@
           width: 36px;
           height: 36px;
           border-radius: 50%;
+          background: #e3b54c;
         }
 
         .entrance {
@@ -328,6 +329,12 @@
       align-items: center;
       color: #fff;
 
+      .history {
+        // width: 26px;
+        // height: 50px;
+        // background-color: #ff1459;
+      }
+
       .platform {
         width: 26px;
         height: 26px;
@@ -411,7 +418,7 @@
         position: absolute;
         width: 290px;
         height: 431px;
-        top: -10px;
+        top: -20px;
         left: 0;
         z-index: 10;
         color: rgb(0, 0, 40);
@@ -472,6 +479,129 @@
           }
         }
 
+
+      }
+
+      .login {
+        position: absolute;
+        width: 370px;
+        height: 300px;
+        top: -35px;
+        left: -100px;
+        z-index: 10;
+        color: rgb(0, 0, 40);
+        background-color: #fff;
+        font-size: 16px;
+        z-index: 23;
+        border-radius: 5px;
+        text-indent: 10px;
+        overflow: hidden;
+        display: none;
+
+        .login_vip {
+          width: 370px;
+          height: 90px;
+          line-height: 30px;
+          background-image: url(../img/pop_user_bg@2x.png);
+
+          li {
+            &:first-of-type {
+              width: 370px;
+              height: 45px;
+              font-size: 16px;
+
+            }
+
+            &:nth-of-type(2) {
+              display: flex;
+              justify-content: space-between;
+
+              h5 {
+                font-weight: 500;
+              }
+
+              button {
+                width: 76px;
+                height: 26px;
+                background-color: #e3b54c;
+                border-radius: 20px;
+                color: white;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+
+        .login_bottom {
+          width: 370px;
+          height: 210px;
+
+          .login_bottom_dl {
+            width: 370px;
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+
+            li {
+              &:nth-of-type(2) {
+                h5{
+                 width: 100px;
+                }
+              }
+              &:nth-of-type(4) {
+                position: relative;
+                h5{
+                 width: 100px;
+                }
+              }
+              &:nth-of-type(4)::after{
+              content: "用客户端看抢VIP";
+              position: absolute;
+              left: -30px;
+              bottom: 8px;
+              width: 150px;
+              height: 30px;
+              font-size: 12px;
+              }
+
+              width: 120px;
+              height: 120px;
+              color: #111;
+              // background-color: #e3b54c;
+
+              img {
+                margin-top: 20px;
+                width: 58;
+                height: 58px;
+              }
+
+              h5 {
+                font-size: 12px;
+                font-weight: 500;
+              }
+            }
+
+          }
+
+          .quick_button {
+
+            .quick {
+              width: 169px;
+              height: 33px;
+              margin: 23px 10px 0 85px;
+              border: none;
+              border-radius: 30px;
+              background: linear-gradient(90deg, #ffb821 0, #ff5c38 45%, #ff1459);
+              color: #fff;
+              font-size: 14px;
+              line-height: 30px;
+              text-align: center;
+            }
+
+          }
+
+        }
 
       }
 
@@ -717,7 +847,7 @@
             width: 1px;
             height: 16px;
             background-color: #ccc;
-            z-index: 23;
+            z-index: 1;
           }
 
           font-weight: 600;
@@ -830,7 +960,7 @@
           width: 1px;
           height: 16px;
           background-color: #ccc;
-          z-index: 2;
+          z-index: 1;
         }
 
         font-weight: 600;
@@ -946,6 +1076,10 @@
         color: #111;
         position: relative;
 
+        &:hover {
+          color: #ff5c38;
+        }
+
         &::after {
           content: '';
           position: absolute;
@@ -954,7 +1088,7 @@
           width: 1px;
           height: 16px;
           background-color: #ccc;
-          z-index: 23;
+          z-index: 2;
         }
 
         &:hover+.allTVDramas {
@@ -1051,6 +1185,10 @@
       }
 
       .TV-play {
+        &:hover {
+          color: #ff5c38;
+        }
+
         &::after {
           content: '';
           position: absolute;
@@ -1059,7 +1197,7 @@
           width: 1px;
           height: 16px;
           background-color: #ccc;
-          z-index: 23;
+          z-index: 2;
         }
 
         font-weight: 600;
@@ -1165,6 +1303,10 @@
       }
 
       .TV-play {
+        &:hover {
+          color: #ff5c38;
+        }
+
         font-weight: 600;
         color: #111;
         position: relative;
@@ -1177,7 +1319,7 @@
           width: 1px;
           height: 18px;
           background-color: #ccc;
-          z-index: 23;
+          z-index: 2;
         }
       }
 
@@ -1269,6 +1411,10 @@
       }
 
       .TV-play {
+        &:hover {
+          color: #ff5c38;
+        }
+
         &::after {
           content: '';
           position: absolute;
@@ -1277,7 +1423,7 @@
           width: 1px;
           height: 18px;
           background-color: #ccc;
-          z-index: 23;
+          z-index: 2;
         }
 
         font-weight: 600;
@@ -1382,7 +1528,7 @@
         background-color: #eee;
         font-weight: 700;
         box-shadow: #f8f8f8;
-        z-index: 23;
+        z-index: 2;
       }
 
       li {
@@ -1400,10 +1546,6 @@
 
         &:nth-of-type(2):hover {
           color: #ff5c38;
-        }
-
-        &:nth-of-type(3):hover .allTVDramas {
-          display: block;
         }
 
         &:nth-of-type(3) {
@@ -1462,10 +1604,6 @@
 
         }
 
-        &:nth-of-type(4):hover .allTVDramas {
-          display: block;
-        }
-
         &:nth-of-type(4) {
 
           //体育导航栏
@@ -1520,10 +1658,6 @@
             pointer-events: none;
           }
 
-        }
-
-        &:nth-of-type(5):hover .allTVDramas {
-          display: block;
         }
 
         &:nth-of-type(5) {
@@ -1659,8 +1793,8 @@
 
         }
 
-        &:nth-of-type(2):hover .allTVDramas {
-          display: block;
+        &:nth-of-type(3):hover {
+          color: #ff5c38;
         }
 
         &:nth-of-type(2) {
@@ -1719,10 +1853,6 @@
 
         }
 
-        &:nth-of-type(4):hover .allTVDramas {
-          display: block;
-        }
-
         &:nth-of-type(4) {
 
           //音乐导航栏
@@ -1777,10 +1907,6 @@
             pointer-events: none;
           }
 
-        }
-
-        &:nth-of-type(5):hover .allTVDramas {
-          display: block;
         }
 
         &:nth-of-type(5) {
@@ -2203,6 +2329,7 @@
       height: 366px;
       background-color: black;
       position: relative;
+
       video {
         width: 566px;
         height: 366px;
@@ -2214,93 +2341,97 @@
     .playCon {
       width: 609px;
       height: 366px;
-    background-color: #fff;
+      background-color: #fff;
+
       .money {
         width: 609px;
         height: 185px;
       }
+
       .fill {
         width: 609px;
         height: 180px;
       }
     }
   }
-  
-//加广告1
-.first_advertise{
+
+  //加广告1
+  .first_advertise {
+    width: 1200px;
+    height: 270px;
+    margin: auto;
+    margin-top: 45px;
+
+    img {
       width: 1200px;
       height: 270px;
-      margin:  auto;
-      margin-top: 45px;
-      img {
-        width: 1200px;
-        height: 270px;
-      }
-}
- // 花絮
- //的书写
- .mod_trailer{
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  height: 60px;
-  // background-color: aqua;
-  margin: 35px auto 10px auto;
-
-  .title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    // margin-top: 30px;
-    h2 {
-      color: #111;
-      font-size: 30px;
-      font-weight: 400;
-    }
-
-    a {
-      margin: 20px 0 0 20px;
-      font-size: 13px;
-      color: #666;
-      cursor: pointer;
     }
   }
 
-  .Hotspot_switching {
-    margin-top: 25px;
+  // 花絮
+  //的书写
+  .mod_trailer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+    width: 1200px;
+    height: 60px;
+    // background-color: aqua;
+    margin: 35px auto 10px auto;
 
-    .icon-zuojiantou {
-      // margin-right: 10px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #ccc;
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      // margin-top: 30px;
+      h2 {
+        color: #111;
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      a {
+        margin: 20px 0 0 20px;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer;
+      }
     }
 
-    span {
-      // margin-right: 1px;
-      width: 45px;
-      margin-left: 25px;
-      margin-right: 15px;
-      color: #666;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
+    .Hotspot_switching {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
 
-    .icon-youjiantou {
-      font-size: 10px;
-      margin-right: 8px;
-      font-weight: 600;
+      .icon-zuojiantou {
+        // margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ccc;
+      }
+
+      span {
+        // margin-right: 1px;
+        width: 45px;
+        margin-left: 25px;
+        margin-right: 15px;
+        color: #666;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .icon-youjiantou {
+        font-size: 10px;
+        margin-right: 8px;
+        font-weight: 600;
+      }
     }
   }
-}
- 
- //英美区
-  .mod_hd_Britain{
+
+  //英美区
+  .mod_hd_Britain {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2359,6 +2490,7 @@
       }
     }
   }
+
   .list_sum_Britain {
     width: 1200px;
     height: 190;
@@ -2443,9 +2575,9 @@
       }
     }
   }
-   
+
   //教育的书写
-  .mod_edu{
+  .mod_edu {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2504,10 +2636,10 @@
       }
     }
   }
-   
 
-   //时尚热度棒区的书写
-   .mod_hd_fashionPopularity{
+
+  //时尚热度棒区的书写
+  .mod_hd_fashionPopularity {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2566,9 +2698,9 @@
       }
     }
   }
-   
+
   //音乐区的书写
-  .mod_hd_music{
+  .mod_hd_music {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2627,9 +2759,9 @@
       }
     }
   }
-   
+
   //娱乐热点
-  .mod_hd_hotspot{
+  .mod_hd_hotspot {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2688,9 +2820,10 @@
       }
     }
   }
+
   //母婴区的书写
-    
-  .mod_hd_motherAndBaby{
+
+  .mod_hd_motherAndBaby {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2749,8 +2882,9 @@
       }
     }
   }
+
   //星座区的书写
-  
+
   .mod_hd_constellation {
     display: flex;
     justify-content: space-between;
@@ -2810,9 +2944,10 @@
       }
     }
   }
-   //汽车区的书写
 
-   .mod_hd_car {
+  //汽车区的书写
+
+  .mod_hd_car {
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -2872,11 +3007,12 @@
     }
   }
 
-  .advertisement{
+  .advertisement {
     width: 1200px;
     margin: 220px auto 40px auto;
+
     img {
-       width: 1200px;
+      width: 1200px;
     }
   }
 
@@ -2923,6 +3059,10 @@
           list-style: none;
 
           li {
+            &:hover {
+              color: #ff8038;
+            }
+
             width: 45px;
             height: 21px;
             margin-left: 15px;
@@ -2953,6 +3093,9 @@
         }
 
         li {
+          &:hover {
+            color: #ff8038;
+          }
 
           list-style: none;
           margin-bottom: 15px;
@@ -2983,6 +3126,10 @@
           justify-content: space-between;
 
           li {
+            &:hover {
+              color: #ff8038;
+            }
+
             width: 80px;
             height: 90px;
             // background: #ffb821;
@@ -3060,6 +3207,10 @@
             height: 160px;
 
             li {
+              &:hover {
+                color: #ff8038;
+              }
+
               margin-bottom: 10px;
             }
           }
@@ -3069,6 +3220,10 @@
             height: 160px;
 
             li {
+              &:hover {
+                color: #ff8038;
+              }
+
               margin-bottom: 20px;
             }
           }
@@ -3089,6 +3244,10 @@
         margin: 0 auto;
 
         a {
+          &:hover {
+            color: #ff8038;
+          }
+
           color: #666;
         }
       }
@@ -3099,6 +3258,10 @@
         margin-left: 460px;
 
         a {
+          &:hover {
+            color: #ff8038;
+          }
+
           color: #666;
         }
       }
@@ -3109,6 +3272,10 @@
         margin-left: 515px;
 
         a {
+          &:hover {
+            color: #ff8038;
+          }
+
           color: #666;
         }
       }
@@ -3119,6 +3286,10 @@
         margin-left: 600px;
 
         a {
+          &:hover {
+            color: #ff8038;
+          }
+
           color: #666;
         }
       }
@@ -3136,6 +3307,7 @@
       width: 112px;
       height: 52px;
       margin-left: 600px;
+
       img {
 
         width: 112px;

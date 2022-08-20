@@ -85,13 +85,14 @@
         allTVDramasSports = sports.querySelector('.allTVDramas'),
         education = leftNavigations[4],
         allTVDramasEducation = education.querySelector('.allTVDramas'),
+
         rightNavigations = main_nav_3.querySelectorAll('.rightNavigation li'),
         game = rightNavigations[0],
         allTVDramasGame = game.querySelector('.allTVDramas'),
         knowledge = rightNavigations[1],
         allTVDramasKnowledge = knowledge.querySelector('.allTVDramas'),
         technology = rightNavigations[3],
-        allTVDramastechnology = knowledge.querySelector('.allTVDramas'),
+        allTVDramastechnology = technology.querySelector('.allTVDramas'),
         more = rightNavigations[4],
         allTVDramasmore = more.querySelector('.allTVDramas');
     let allTVDramas = document.querySelectorAll('.allTVDramas');
@@ -156,14 +157,17 @@
     tvEnter(game, allTVDramasGame);
     boxEnter(game, allTVDramasGame);
     tyLeave(allTVDramasGame)
+    console.log(allTVDramasGame);
     //来给知识写入事件
     tvEnter(knowledge, allTVDramasKnowledge);
     boxEnter(knowledge, allTVDramasKnowledge);
     tyLeave(allTVDramasKnowledge)
+    console.log(allTVDramasKnowledge);
     //来给技术写入事件
     tvEnter(technology, allTVDramastechnology);
     boxEnter(technology, allTVDramastechnology);
     tyLeave(allTVDramastechnology)
+    console.log(allTVDramastechnology);
     //来给更多写入事件
     tvEnter(more, allTVDramasmore);
     boxEnter(more, allTVDramasmore);
@@ -238,7 +242,7 @@
     let mod_hd_fashionPopularity = document.querySelector('.mod_hd_fashionPopularity'),
     number_fashion = document.querySelector('.number_fashion'),
     [btnPrev_fashion, btnNext_fashion] = [...mod_hd_fashionPopularity.querySelectorAll('.Hotspot_switching i')],
-    [list_numA_fashion,list_numB_fashion] = [...document.querySelectorAll('.list_sum  .trailer_num_num')];
+    [list_numA_fashion,list_numB_fashion] = [...document.querySelectorAll('.list_sum  .fashion_num_num')];
     nextClick(list_numA_fashion, number_fashion, btnNext_fashion, btnPrev_fashion);
     prevClick(list_numA_fashion, number_fashion, btnNext_fashion, btnPrev_fashion);
    
@@ -298,15 +302,17 @@
     /* 给导航栏中的历史记录我的来做鼠标移入个移除事件 */
     let history = document.querySelector('.history'),
         historyDiv = document.querySelector('.historyDiv');
-    history.addEventListener('mouseenter', function () {
+
+        his_his.addEventListener('mouseenter', function () {
         historyDiv.style.display = 'block';
     });
-    history.addEventListener('mouseleave', function () {
-        historyDiv.style.display = 'none';
-    });
+    // history.addEventListener('mouseleave', function () {
+    //     historyDiv.style.display = 'none';
+    // });
     historyDiv.addEventListener('mouseleave', function () {
         historyDiv.style.display = 'none';
     })
+     console.log(history);
     /* 导航栏中我们中的体验的进入和移除的事件 */
     let platform = document.querySelector('.platform'),
         platformImg = document.querySelector('.platformImg');
@@ -338,13 +344,25 @@
         platformImg.style.opacity = '0';
 
     })
-    experience.addEventListener('mouseleave', function () {
-        experienceDiv.style.display = 'none';
-    })
+    // experience.addEventListener('mouseleave', function () {
+    //     experienceDiv.style.display = 'none';
+    // })
     experienceDiv.addEventListener('mouseleave', function () {
         experienceDiv.style.display = 'none';
     })
-
+     
+    //登录的书写
+    let  me = document.querySelector('.me'),
+         login  = document.querySelector('.login');
+        me.addEventListener('mouseenter',function(){
+          login.style.display = 'block'
+        })
+        // me.addEventListener('mouseleave',function(){
+        //   login.style.display = 'none'
+        // })
+        login.addEventListener('mouseleave',function(){
+          login.style.display = 'none'
+        })
 })();
 
 /* 开始做数据的渲染 */
@@ -540,24 +558,24 @@
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_education.appendChild(list_item);
     })
-    data.music.forEach(item => {
-        let { id, pic, video, title } = item;
-        let str = ``,
-            list_item = document.createElement('div');
-        list_item.className = 'list_item';
+    // data.music.forEach(item => {
+    //     let { id, pic, video, title } = item;
+    //     let str = ``,
+    //         list_item = document.createElement('div');
+    //     list_item.className = 'list_item';
 
-        str += ` <a href=""
-              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-              <img src="${pic}" alt="" class="firstImg" alt="${title}">
-              <div class="videoTime">${video}</div>
-              <span class="play"></span>
-          </a>`
-        str += `<div class="title_text">
-             ${title}
-         </div> `
-        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
-        list_music.appendChild(list_item);
-    })
+    //     str += ` <a href=""
+    //           target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+    //           <img src="${pic}" alt="" class="firstImg" alt="${title}">
+    //           <div class="videoTime">${video}</div>
+    //           <span class="play"></span>
+    //       </a>`
+    //     str += `<div class="title_text">
+    //          ${title}
+    //      </div> `
+    //     list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+    //     list_music.appendChild(list_item);
+    // })
     data.Britain.forEach(item => {
         let { id, pic, video, title } = item;
         let str = ``,
