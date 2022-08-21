@@ -234,6 +234,14 @@
   font-size: 15;
   font-weight: 600;
 }
+.topColor .topCenter button .icon-Rrl_s_018 {
+  position: absolute;
+  left: -70px;
+  top: 9px;
+  color: #ff5c38;
+  font-size: 15;
+  font-weight: 600;
+}
 .topColor .topCenter .btn::before {
   content: "热搜榜";
   position: absolute;
@@ -271,6 +279,74 @@ section .container {
   height: 500px;
   overflow: hidden;
 }
+section .backColor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1680px;
+  height: 580px;
+  background: rgba(75, 74, 78);
+  /* background-color: #2e373b; */
+  display: none;
+  overflow: hidden;
+}
+section .backColor .swiper {
+  margin-top: 109px;
+  margin-left: 180px;
+  width: 1130px;
+  height: 453px;
+  position: relative;
+}
+section .backColor .swiper img {
+  width: 260px;
+  height: 364px;
+  margin-left: 13px;
+}
+section .backColor .swiper img:not(.no_hover):hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+section .backColor .swiper .swiper-button-prev:after {
+  display: none;
+}
+section .backColor .swiper .swiper-button-next:after {
+  display: none;
+}
+section .backColor .swiper .swiper-button-prev {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -46px;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(10, 11, 28);
+  border-radius: 50%;
+  z-index: 12;
+}
+section .backColor .swiper .swiper-button-next {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  margin-top: -66px;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(10, 11, 28);
+  border-radius: 50%;
+}
+section .backColor .swiper svg {
+  color: #fff;
+}
+section .backColor .swiper svg:hover {
+  color: crimson;
+}
+section .backColor .swiper .swiper-button-disabled {
+  display: none;
+}
+section .backColor .swiper .svg_next {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
 section .containerRight {
   position: absolute;
   right: 0;
@@ -290,7 +366,7 @@ section .containerRight .platformImg {
   z-index: 10;
   color: #000028;
   z-index: 23;
-  opacity: 0;
+  display: none;
 }
 section .containerRight .platformImg::after {
   content: "去创作";
@@ -382,7 +458,7 @@ section .containerRight .login {
   color: #000028;
   background-color: #fff;
   font-size: 16px;
-  z-index: 23;
+  z-index: 33;
   border-radius: 5px;
   text-indent: 10px;
   overflow: hidden;
@@ -687,6 +763,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.s-second .main_nav-0 .main_nav-0-top .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .s-second .main_nav-0 .main_nav-0-top .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -778,6 +857,9 @@ section .containerRight .nav-barSecond li .title-1 {
   text-overflow: ellipsis;
   vertical-align: top;
   white-space: nowrap;
+}
+.s-second .main_nav-0-bottom .allTVDramas a:hover {
+  color: #ff5c38;
 }
 .s-second .main_nav-0-bottom .allTVDramas::after {
   position: absolute;
@@ -885,6 +967,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-1 .main_nav-1-top .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-1 .main_nav-1-top .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -980,6 +1065,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-1 .main_nav-1-bottom .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-1 .main_nav-1-bottom .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -1074,6 +1162,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-2 .main_nav-2-top .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-2 .main_nav-2-top .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -1164,6 +1255,9 @@ section .containerRight .nav-barSecond li .title-1 {
   text-overflow: ellipsis;
   vertical-align: top;
   white-space: nowrap;
+}
+.main_nav-2 .main_nav-2-bottom .allTVDramas a:hover {
+  color: #ff5c38;
 }
 .main_nav-2 .main_nav-2-bottom .allTVDramas::after {
   position: absolute;
@@ -1263,6 +1357,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-3 .leftNavigation li:nth-of-type(3) .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-3 .leftNavigation li:nth-of-type(3) .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -1307,6 +1404,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-3 .leftNavigation li:nth-of-type(4) .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-3 .leftNavigation li:nth-of-type(4) .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -1350,6 +1450,9 @@ section .containerRight .nav-barSecond li .title-1 {
   text-overflow: ellipsis;
   vertical-align: top;
   white-space: nowrap;
+}
+.main_nav-3 .leftNavigation li:nth-of-type(5) .allTVDramas a:hover {
+  color: #ff5c38;
 }
 .main_nav-3 .leftNavigation li:nth-of-type(5) .allTVDramas::after {
   position: absolute;
@@ -1412,6 +1515,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-3 .rightNavigation li:first-of-type .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-3 .rightNavigation li:first-of-type .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -1459,6 +1565,9 @@ section .containerRight .nav-barSecond li .title-1 {
   vertical-align: top;
   white-space: nowrap;
 }
+.main_nav-3 .rightNavigation li:nth-of-type(2) .allTVDramas a:hover {
+  color: #ff5c38;
+}
 .main_nav-3 .rightNavigation li:nth-of-type(2) .allTVDramas::after {
   position: absolute;
   top: auto;
@@ -1502,6 +1611,9 @@ section .containerRight .nav-barSecond li .title-1 {
   text-overflow: ellipsis;
   vertical-align: top;
   white-space: nowrap;
+}
+.main_nav-3 .rightNavigation li:nth-of-type(4) .allTVDramas a:hover {
+  color: #ff5c38;
 }
 .main_nav-3 .rightNavigation li:nth-of-type(4) .allTVDramas::after {
   position: absolute;
@@ -1549,6 +1661,9 @@ section .containerRight .nav-barSecond li .title-1 {
   text-overflow: ellipsis;
   vertical-align: top;
   white-space: nowrap;
+}
+.main_nav-3 .rightNavigation li:nth-of-type(5) .allTVDramas a:hover {
+  color: #ff5c38;
 }
 .main_nav-3 .rightNavigation li:nth-of-type(5) .allTVDramas::after {
   position: absolute;
