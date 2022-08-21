@@ -2125,12 +2125,12 @@ section .containerRight .nav-barSecond li .title-1 {
 .list_sum_Britain .list_num .list_item {
   position: relative;
   width: 185px;
-  height: 259px;
+  height: 150px;
   margin-left: 16px;
 }
 .list_sum_Britain .list_num .list_item a .firstImg {
   width: 185px;
-  height: 259px;
+  height: 130px;
   border-radius: 4px;
 }
 .list_sum_Britain .list_num .list_item a .play {
@@ -2145,7 +2145,7 @@ section .containerRight .nav-barSecond li .title-1 {
 .list_sum_Britain .list_num .list_item a .videoTime {
   position: absolute;
   left: 0;
-  bottom: 48px;
+  bottom: 22px;
   width: auto;
   height: 20px;
   padding: 10px 10px 4px;
@@ -2170,7 +2170,7 @@ section .containerRight .nav-barSecond li .title-1 {
   justify-content: space-between;
   width: 1200px;
   height: 60px;
-  margin: 335px auto 10px auto;
+  margin: 240px auto 10px auto;
 }
 .mod_edu .title {
   display: flex;

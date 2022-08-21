@@ -740,6 +740,47 @@
         // dataRouter(data.video3,list_video);
         // dataRouter(data.video4,list_video2);
     })
+    next.addEventListener('click',function(){
+
+        video_number.innerHTML = '2/2';
+        prev.style.color = '#111';
+        next.style.color = '#ccc';
+        let item1 = list_video.querySelectorAll('.list_item');
+        let item2 = list_video2.querySelectorAll('.list_item');
+        for (let i = 0; i < item1.length; i++) {
+            item1[i].style.display = 'none';
+        }
+        for (let i = 0; i < item2.length; i++) {
+            item2[i].style.display = 'none';
+        }
+
+        value_video = data.video3;
+        value_dom = list_video;
+        value_video2 = data.video4;
+        value_dom2 = list_video2;
+        dataRouter(value_video, value_dom);
+        dataRouter(value_video2, value_dom2);
+       
+    })
+    prev.addEventListener('click',function(){
+        video_number.innerHTML = '1/2'
+        prev.style.color = '#ccc';
+        next.style.color = '#111';
+        let item1 = list_video.querySelectorAll('.list_item');
+        let item2 = list_video2.querySelectorAll('.list_item');
+        for (let i = 3; i < item1.length; i++) {
+            item1[i].style.display = 'none';
+        }
+        for (let i = 3; i < item2.length; i++) {
+            item2[i].style.display = 'none';
+        }
+        for (let i = 0; i < 3; i++) {
+            item1[i].style.display = 'block';
+        }
+        for (let i = 0; i < 3; i++) {
+            item2[i].style.display = 'block';
+        }
+    })
 })();
 
 
