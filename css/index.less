@@ -700,13 +700,16 @@
 
       .nav-barFirst {
         li {
+          svg{
+            margin-right: 5px;
+          }
           width: 275px;
           height: 35px;
           border-bottom: 1px solid rgba(255, 255, 255, .13);
-          padding: 20px 0 0 35px;
+          padding: 20px 0 0 10px;
           font-size: 22px;
           font-weight: 700;
-          color: #fff;
+          color: rgba(255,255,255,.7);
         }
       }
 
@@ -714,7 +717,11 @@
         color: #666;
 
         li:nth-of-type(1) {
-          //我们图片进入事件和出去的时候来hover
+          .icon-Rrl_s_018{
+          //  color: #ff5c38;
+            margin-right: 5px;
+          }
+          margin-left: -26px;
           margin-top: 8px;
           font-size: 22px;
           font-weight: 700;
@@ -891,7 +898,9 @@
 
           span {
             //公共的样式span
-            color: #fff;
+            // color: #fff;
+            // color: #eee;
+            color: rgba(255,255,255,.7);
           }
 
           .title-1 {
@@ -2371,9 +2380,11 @@
       }
     }
   }
-
+   
   //知识区的书写二
-
+  .CaoJin:hover{
+    transform: scale(1.5);
+  }
   //视频区区的书写
   .mod_hd_video {
     display: flex;

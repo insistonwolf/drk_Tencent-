@@ -1,7 +1,5 @@
 (function () {
-
     //音乐的播放
-
     window.onload = function () {
         setInterval(toggleSound, 10);
     }
@@ -43,7 +41,10 @@
         item.addEventListener('mouseenter', function () {
             timer = clearInterval(timer)
             img1.src = `./img/0 (${index}).webp`
-        })
+            let recommend = document.querySelector('.recommend');
+            recommend.style.color = '#fff';
+            pictuer_pic.style.color = '#ff5c38'
+        });
     })
     centerLi.forEach((item, index) => {
         item.addEventListener('mouseleave', function () {
@@ -65,7 +66,7 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        },on: {
+        }, on: {
             slideChangeTransitionEnd: function () {
                 if (this.isEnd) {
                     this.navigation.$nextEl.css('display', 'none');
@@ -75,20 +76,23 @@
             },
         },
     })
-
-    let guess  = document.querySelector('.guess'),
+    //猜你会追
+    let guess = document.querySelector('.guess'),
         backColor = document.querySelector('.backColor'),
         recommend = document.querySelector('.nav-barSecond');
-        guess.addEventListener('mouseenter',function(){
-        
-            backColor.style.display = 'block'
-            guess.style.color = 'red'
-        })
-        recommend.addEventListener('mouseenter',function(){
-        
-            backColor.style.display = 'none'
-            guess.style.color = '#fff'
-        })
+    guess.addEventListener('mouseenter', function () {
+
+        backColor.style.display = 'block'
+        guess.style.color = 'red'
+        let recommend = document.querySelector('.recommend');
+        recommend.style.color = 'rgba(255,255,255,.7)';
+        pictuer_pic.style.color = '#fff'
+    })
+    recommend.addEventListener('mouseenter', function () {
+
+        backColor.style.display = 'none'
+        guess.style.color = '#fff'
+    })
     /* 第三部分导航栏的书写 */
     //电视剧和电影的
     let main_nav_0 = document.querySelector('.main_nav-0'),
@@ -337,10 +341,10 @@
     container.addEventListener('click', function () {
         entrance.style.display = 'none';
     });
-    let vip  = document.querySelector('.vip');
-        vip.addEventListener('mouseenter',function(){
-            historyDiv.style.display = 'none';
-        })
+    let vip = document.querySelector('.vip');
+    vip.addEventListener('mouseenter', function () {
+        historyDiv.style.display = 'none';
+    })
     /* 给导航栏中的历史记录我的来做鼠标移入个移除事件 */
     let history = document.querySelector('.history'),
         historyDiv = document.querySelector('.historyDiv');
@@ -456,7 +460,7 @@
         let str = ``,
             list_item = document.createElement('div');
         list_item.className = 'list_item';
-
+      
         str += ` <a href=""
           target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
           <img src="${pic}" alt="" class="firstImg" alt="${title}">
@@ -468,8 +472,33 @@
      </div> `
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_sum.appendChild(list_item);
+        //   list_itme.classList.add = 'CaoJin';
     });
+    //来实现放大的效果
+    let caoJin  =document.querySelector('.data_2'),
+        caojin = caoJin.querySelectorAll('.list_item');
+        title = caoJin.querySelector('.title_text')
+        
+        for(let i = 3 ; i < caojin.length;i++){
+            if (i === 6) {
+                i = 9;
+            }
+            caojin[i].addEventListener('mouseenter',function(){
+                caojin[i].style.transform = `scaleY(${1.6})`;
+                title.style.display = 'none';
+                caojin[i].addEventListener('mouseleave',function(){
+                    caojin[i].style.transform = `scaleY(${1})`;
+                    title.style.display = 'block';
+                   
+                })
+            })
 
+
+        }
+
+       
+
+    console.log(title);
     data.data3.forEach(item => {
         let { id, pic, video, title } = item;
         let str = ``,
@@ -596,24 +625,6 @@
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_education.appendChild(list_item);
     })
-    // data.music.forEach(item => {
-    //     let { id, pic, video, title } = item;
-    //     let str = ``,
-    //         list_item = document.createElement('div');
-    //     list_item.className = 'list_item';
-
-    //     str += ` <a href=""
-    //           target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-    //           <img src="${pic}" alt="" class="firstImg" alt="${title}">
-    //           <div class="videoTime">${video}</div>
-    //           <span class="play"></span>
-    //       </a>`
-    //     str += `<div class="title_text">
-    //          ${title}
-    //      </div> `
-    //     list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
-    //     list_music.appendChild(list_item);
-    // })
     data.Britain.forEach(item => {
         let { id, pic, video, title } = item;
         let str = ``,
