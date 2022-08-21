@@ -793,22 +793,60 @@
     ,"video2" :[
        {
             "id": 1,
-            "pic": "./img/flower1.webp",
+            "pic": "./img/700.webp",
             "video": "01:03",
             "title": " 探店深蓝SL03 它会是20万级纯电轿车王炸吗  "
         },
         {
             "id": 2,
-            "pic": "./img/flower3.webp",
+            "pic": "./img/701.webp",
             "video": "00:40",
             "title": "本田终于出“越野车”了 看起来就很硬派的实用越野  "
         },
         {
             "id": 3,
-            "pic": "./img/flower4.webp",
+            "pic": "./img/702.png",
             "video": "21:59",
             "title": "只有215公里！ 蔚来ET7低温续航全网首测！  "
         }
-    ]
+    ],"video3" :[
+       {
+            "id": 1,
+            "pic": "./img/703.png",
+            "video": "01:03",
+            "title": " 探店深蓝SL03 它会是20万级纯电轿车王炸吗  "
+        },
+        {
+            "id": 2,
+            "pic": "./img/704.png",
+            "video": "00:40",
+            "title": "本田终于出“越野车”了 看起来就很硬派的实用越野  "
+        },
+        {
+            "id": 3,
+            "pic": "./img/705.png",
+            "video": "21:59",
+            "title": "只有215公里！ 蔚来ET7低温续航全网首测！  "
+        }
+    ], "video4" :[
+        {
+             "id": 1,
+             "pic": "./img/flower1.webp",
+             "video": "01:03",
+             "title": " 探店深蓝SL03 它会是20万级纯电轿车王炸吗  "
+         },
+         {
+             "id": 2,
+             "pic": "./img/flower3.webp",
+             "video": "00:40",
+             "title": "本田终于出“越野车”了 看起来就很硬派的实用越野  "
+         },
+         {
+             "id": 3,
+             "pic": "./img/flower4.webp",
+             "video": "21:59",
+             "title": "只有215公里！ 蔚来ET7低温续航全网首测！  "
+         }
+     ]
 
 }

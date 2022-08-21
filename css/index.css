@@ -1978,6 +1978,9 @@ section .containerRight .nav-barSecond li .title-1 {
   height: 366px;
   position: absolute;
 }
+.video_vip .play #video2 {
+  display: none;
+}
 .video_vip .playCon {
   width: 609px;
   height: 366px;

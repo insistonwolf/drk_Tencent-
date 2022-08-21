@@ -1,18 +1,18 @@
 (function () {
     //音乐的播放
-    window.onload = function () {
-        setInterval(toggleSound, 10);
-    }
-    console.time('输出时间')
-    function toggleSound() {
-        var music = document.getElementById("vd");//获取ID  
+    // window.onload = function () {
+    //     setInterval(toggleSound, 10);
+    // }
+    // console.time('输出时间')
+    // function toggleSound() {
+    //     var music = document.getElementById("vd");//获取ID  
 
-        if (music.paused) { //判读是否播放  
-            music.paused = false;
-            music.play(); //没有就播放 
-        }
-    }
-    console.timeEnd('输出时间')
+    //     if (music.paused) { //判读是否播放  
+    //         music.paused = false;
+    //         music.play(); //没有就播放 
+    //     }
+    // }
+    //console.timeEnd('输出时间')
     //1实现进入来进行切换图片
 
     let container = document.querySelector('.container'), //主内容框
@@ -405,6 +405,8 @@
     login.addEventListener('mouseleave', function () {
         login.style.display = 'none'
     })
+    //
+
 })();
 
 /* 开始做数据的渲染 */
@@ -460,7 +462,7 @@
         let str = ``,
             list_item = document.createElement('div');
         list_item.className = 'list_item';
-      
+
         str += ` <a href=""
           target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
           <img src="${pic}" alt="" class="firstImg" alt="${title}">
@@ -475,28 +477,28 @@
         //   list_itme.classList.add = 'CaoJin';
     });
     //来实现放大的效果
-    let caoJin  =document.querySelector('.data_2'),
+    let caoJin = document.querySelector('.data_2'),
         caojin = caoJin.querySelectorAll('.list_item');
-        title = caoJin.querySelector('.title_text')
-        
-        for(let i = 3 ; i < caojin.length;i++){
-            if (i === 6) {
-                i = 9;
-            }
-            caojin[i].addEventListener('mouseenter',function(){
-                caojin[i].style.transform = `scaleY(${1.6})`;
-                title.style.display = 'none';
-                caojin[i].addEventListener('mouseleave',function(){
-                    caojin[i].style.transform = `scaleY(${1})`;
-                    title.style.display = 'block';
-                   
-                })
-            })
+    title = caoJin.querySelector('.title_text')
 
-
+    for (let i = 3; i < caojin.length; i++) {
+        if (i === 6) {
+            i = 9;
         }
+        caojin[i].addEventListener('mouseenter', function () {
+            caojin[i].style.transform = `scaleY(${1.6})`;
+            title.style.display = 'none';
+            caojin[i].addEventListener('mouseleave', function () {
+                caojin[i].style.transform = `scaleY(${1})`;
+                title.style.display = 'block';
 
-       
+            })
+        })
+
+
+    }
+
+
 
     console.log(title);
     data.data3.forEach(item => {
@@ -662,41 +664,81 @@
         list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
         list_trailer.appendChild(list_item);
     })
-    data.video.forEach(item => {
-        let { id, pic, video, title } = item;
-        let str = ``,
-            list_item = document.createElement('div');
-        list_item.className = 'list_item';
+    function dataRouter(value, attr) {
+        value.forEach(item => {
+            let { id, pic, video, title } = item;
+            let str = ``,
+                list_item = document.createElement('div');
+            list_item.className = 'list_item';
 
-        str += ` <a href=""
-              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-              <img src="${pic}" alt="" class="firstImg" alt="${title}">
-              <div class="videoTime">${video}</div>
-              <span class="play"></span>
-          </a>`
-        str += `<div class="title_text">
-             ${title}
-         </div> `
-        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
-        list_video.appendChild(list_item);
+            str += ` <a href=""
+                  target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
+                  <img src="${pic}" alt="" class="firstImg" alt="${title}">
+                  <div class="videoTime">${video}</div>
+                  <span class="play"></span>
+              </a>`
+            str += `<div class="title_text">
+                 ${title}
+             </div> `
+            list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
+            attr.appendChild(list_item);
+        })
+    };
+    let value_video = data.video;
+    let value_dom = list_video;
+    let value_video2 = data.video2;
+    let value_dom2 = list_video2;
+    dataRouter(value_video, value_dom);
+    dataRouter(value_video2, value_dom2);
+    //热门视频的
+    //为你推荐
+    let mod_hd_video = document.querySelector('.mod_hd_video');
+    let title1 = mod_hd_video.querySelector('.title1');
+    title1.addEventListener('mouseenter', function () {
+        // dataRouter(data.video,list_video);
+        // dataRouter(data.video2,list_video2);
+        video1.style.display = 'block';
+        video2.style.display = 'none';
+        let item1 = list_video.querySelectorAll('.list_item');
+        let item2 = list_video2.querySelectorAll('.list_item');
+        for (let i = 3; i < item1.length; i++) {
+            item1[i].style.display = 'none';
+        }
+        for (let i = 3; i < item2.length; i++) {
+            item2[i].style.display = 'none';
+        }
+        for (let i = 0; i < 3; i++) {
+            item1[i].style.display = 'block';
+        }
+        for (let i = 0; i < 3; i++) {
+            item2[i].style.display = 'block';
+        }
     })
-    data.video2.forEach(item => {
-        let { id, pic, video, title } = item;
-        let str = ``,
-            list_item = document.createElement('div');
-        list_item.className = 'list_item';
+    //艺术
+    let title2 = mod_hd_video.querySelector('.title2');
+    title2.addEventListener('mouseenter', function () {
+        video2.style.display = 'block';
+        video1.style.display = 'none';
 
-        str += ` <a href=""
-              target="scene=%E9%A2%91%E9%81%93%E9%A1%B5&pagename=%E7%B2%BE%E9%80%89%E9%A2%91%E9%81%93&columnname=%E7%B2%BE%E9%80%89_%E4%BB%8A%E6%97%A5%E7%83%AD%E9%97%A8&controlname=new_vs_hot_today&cid=&vid=f33511r9msb&pid=&datatype=1&playertype=1&controlidx=0&columnidx=0&plat_bucketid=9231006&cmd=1">
-              <img src="${pic}" alt="" class="firstImg" alt="${title}">
-              <div class="videoTime">${video}</div>
-              <span class="play"></span>
-          </a>`
-        str += `<div class="title_text">
-             ${title}
-         </div> `
-        list_item.innerHTML = str; //为什么这个不可以用appendChind来进行插入呢
-        list_video2.appendChild(list_item);
+        let item1 = list_video.querySelectorAll('.list_item');
+        let item2 = list_video2.querySelectorAll('.list_item');
+        for (let i = 0; i < item1.length; i++) {
+            item1[i].style.display = 'none';
+        }
+        for (let i = 0; i < item2.length; i++) {
+            item2[i].style.display = 'none';
+        }
+
+        value_video = data.video3;
+        value_dom = list_video;
+        value_video2 = data.video4;
+        value_dom2 = list_video2;
+        dataRouter(value_video, value_dom);
+        dataRouter(value_video2, value_dom2);
+        // quick.style.display = 'none';
+        // quick2.style.display = 'none';
+        // dataRouter(data.video3,list_video);
+        // dataRouter(data.video4,list_video2);
     })
 })();
 
